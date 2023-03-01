@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+$bg: #000000 ;
+$el1: #52057B ;
+$el2: #892CDC ;
+$el3: #BC6FF1 ;
+$el3mod: #bd6ff1a6;
+$alic: rgba(255, 255, 255, 0.884);
+
+
+html{
+    font-family: 'Indie Flower', cursive;
+    background-color: $bg;
+    color: #BC6FF1;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    #logo{
+        font-size: 50px;
+        font-weight: 900;
+    }
+    .Nav-el{
+        font-family: 'Montserrat', sans-serif;
+        padding: 4px 9px 4px 9px;
+        border: 1px solid $el3mod;
+        color: $alic;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: black;
+        transition-duration: 0.4s;
+    }
+    .mp{
+        background-color: $el3mod;
+    }
+}

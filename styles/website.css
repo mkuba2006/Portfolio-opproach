@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+html {
+  font-family: "Indie Flower", cursive;
+  background-color: #000000;
+  color: #BC6FF1;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+nav #logo {
+  font-size: 50px;
+  font-weight: 900;
+}
+nav .Nav-el {
+  font-family: "Montserrat", sans-serif;
+  padding: 4px 9px 4px 9px;
+  border: 1px solid rgba(189, 111, 241, 0.6509803922);
+  color: rgba(255, 255, 255, 0.884);
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: black;
+  transition-duration: 0.4s;
+}
+nav .mp {
+  background-color: rgba(189, 111, 241, 0.6509803922);
+}/*# sourceMappingURL=website.css.map */

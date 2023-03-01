@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-opproach",
+  "version": "1.0.0",
+  "description": "my_website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkuba2006/Portfolio-opproach.git"
+  },
+  "author": "Jakub Myrta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkuba2006/Portfolio-opproach/issues"
+  },
+  "homepage": "https://github.com/mkuba2006/Portfolio-opproach#readme",
+  "dependencies": {
+    "sass": "^1.58.3"
+  }
+}
