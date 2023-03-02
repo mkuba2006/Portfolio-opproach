@@ -5,6 +5,7 @@ $bg: #000000 ;
 $el1: #52057B ;
 $el2: #892CDC ;
 $el3: #BC6FF1 ;
+$el4mod: #1b1b1b;
 $el3mod: #bd6ff1a6;
 $alic: rgba(255, 255, 255, 0.884);
 
@@ -14,25 +15,56 @@ html{
     background-color: $bg;
     color: #BC6FF1;
 }
+body{
+    margin: 0;
+    padding: 1% 3% 1% 3%;
+}
 nav{
-    display: flex;
-    width: 100%;
-    align-items: center;
+    position: relative;
+    display: inline-flex;
+    width: 100%;   
+    align-items: center; 
     #logo{
-        font-size: 50px;
+        font-size: 75px;
         font-weight: 900;
+        transition-duration: 0.4s;
+        border-radius: 10px;
+        padding: 10px 10px 0px 10px;
+        animation: doLogo 5s linear infinite;
+        
+    }
+    @keyframes doLogo {
+        0%{color: #F5EAEA;}
+        25%{ color: #FFB84C;}
+        50%{color: #F16767;}
+        75%{color: #A459D1;}
+        100%{color: #F5EAEA;}
+    }
+    #logo:hover{
+        background-color: #1b1b1b81;
+    }
+    #one{
+        justify-content: flex-end;
+    }
+    #two{
+        position: absolute;
+        right: 100px;
+        display: flex;
+        gap: 15px;
+        justify-content: flex-end;
     }
     .Nav-el{
         font-family: 'Montserrat', sans-serif;
-        padding: 4px 9px 4px 9px;
-        border: 1px solid $el3mod;
+        padding: 6px 11px 6px 11px;
+        border: 1px solid $el4mod;
         color: $alic;
         border-radius: 5px;
         font-size: 16px;
         background-color: black;
         transition-duration: 0.4s;
+
     }
     .mp{
-        background-color: $el3mod;
+        background-color: $el4mod;
     }
 }

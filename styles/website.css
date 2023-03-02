@@ -7,19 +7,59 @@ html {
   color: #BC6FF1;
 }
 
+body {
+  margin: 0;
+  padding: 1% 3% 1% 3%;
+}
+
 nav {
-  display: flex;
+  position: relative;
+  display: inline-flex;
   width: 100%;
   align-items: center;
 }
 nav #logo {
-  font-size: 50px;
+  font-size: 75px;
   font-weight: 900;
+  transition-duration: 0.4s;
+  border-radius: 10px;
+  padding: 10px 10px 0px 10px;
+  animation: doLogo 5s linear infinite;
+}
+@keyframes doLogo {
+  0% {
+    color: #F5EAEA;
+  }
+  25% {
+    color: #FFB84C;
+  }
+  50% {
+    color: #F16767;
+  }
+  75% {
+    color: #A459D1;
+  }
+  100% {
+    color: #F5EAEA;
+  }
+}
+nav #logo:hover {
+  background-color: rgba(27, 27, 27, 0.5058823529);
+}
+nav #one {
+  justify-content: flex-end;
+}
+nav #two {
+  position: absolute;
+  right: 100px;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
 }
 nav .Nav-el {
   font-family: "Montserrat", sans-serif;
-  padding: 4px 9px 4px 9px;
-  border: 1px solid rgba(189, 111, 241, 0.6509803922);
+  padding: 6px 11px 6px 11px;
+  border: 1px solid #1b1b1b;
   color: rgba(255, 255, 255, 0.884);
   border-radius: 5px;
   font-size: 16px;
@@ -27,5 +67,5 @@ nav .Nav-el {
   transition-duration: 0.4s;
 }
 nav .mp {
-  background-color: rgba(189, 111, 241, 0.6509803922);
+  background-color: #1b1b1b;
 }/*# sourceMappingURL=website.css.map */
