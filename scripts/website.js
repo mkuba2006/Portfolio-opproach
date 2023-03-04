@@ -9,9 +9,19 @@ buttons.forEach((button) => {
     });
   });
 
-  ScrollReveal().reveal('#one');
-  ScrollReveal().reveal('.two button', {delay: 500, origin: 'bottom', interval: 200});
+  ScrollReveal().reveal('#one',{origin: 'left', distance: '30%'});
+  ScrollReveal().reveal('.two a', {delay: 500, origin: 'left', distance: '130%', interval: 200});
+  ScrollReveal().reveal('.two a button', {delay: 500, origin: 'left', distance: '30%', interval: 200});
+
   ScrollReveal().reveal('.addon .n', { origin: 'bottom', interval: 200});
+  ScrollReveal().reveal('#dos div', { delay: 200, origin: 'left', distance: '30%', interval: 200});
+
+  ScrollReveal().reveal('#opis h3', { delay: 200, origin: 'left', distance: '30%'});
+  ScrollReveal().reveal('#opis h1', { delay: 400, origin: 'left', distance: '30%'});
+  ScrollReveal().reveal('#opis #buttons', { delay: 600, origin: 'left', distance: '30%'});
+
+  ScrollReveal().reveal('#opis #buttons button', { delay: 200, origin: 'left', distance: '20%', interval: 500});
+
 
 
 
@@ -21,51 +31,25 @@ buttons.forEach((button) => {
   const i = document.querySelectorAll("i");
   console.log(dos_el);
   if (window.outerWidth < 1200 && window.outerWidth > 930) {
-    dos.style.cssText = `
-      height: 400px;
-      padding: 80px 0px;
-    `;
+    dos.style.cssText = `height: 400px; padding: 80px 0px;`;
     dos_el.forEach((el) => {
-      el.style.cssText = `
-      min-width: 200px;
-      `;
+      el.style.cssText = `min-width: 200px;`;
     });
   } else if (window.outerWidth < 920 && window.outerWidth > 600) {
-    dos.style.cssText = `
-      height: 350px;
-      padding: 100px 0px;
-    `;
+    dos.style.cssText = `height: 350px; padding: 100px 0px; `;
     dos_el.forEach((el) => {
-      el.style.cssText = `
-      min-width: 200px;
-      font-size: 15px;
-      `;
+      el.style.cssText = `min-width: 200px; font-size: 15px;`;
     });
     i.forEach((i) => {
-      i.style.cssText = `
-      font-size: 100px;
-      `;
+      i.style.cssText = `font-size: 100px;`;
     });
   } else if (window.outerWidth < 600) {
-    dos.style.cssText = `
-      display: grid;
-      width: 100vw;
-      height: auto;
-      padding: 100px 0px;
-      margin-bottom: 1000px;
-    `;
+    dos.style.cssText = `display: grid; width: 100vw; height: auto; padding: 100px 0px; margin-bottom: 1000px; `;
     dos_el.forEach((el) => {
-      el.style.cssText = `
-      min-width: 200px;
-      width: 50vw;
-      font-size: 15px;
-      height: auto;
-      `;
+      el.style.cssText = `min-width: 200px;width: 50vw; font-size: 15px; height: auto;`;
     });
     i.forEach((i) => {
-      i.style.cssText = `
-      font-size: 100px;
-      `;
+      i.style.cssText = `100px;`;
     });
     dos_el[0].style.paddingBottom = "70px";
     dos_el[1].style.paddingBottom = "70px";
