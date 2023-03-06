@@ -67,6 +67,16 @@ nav .Nav-el {
   background-color: black;
   transition-duration: 0.4s;
 }
+nav #burger div {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+  height: 4px;
+  margin: 5px;
+  background-color: #fdfdfd;
+  padding-left: 3%;
+  transition: all 0.3s ease;
+}
 nav .mp {
   background-color: #1b1b1b;
 }
@@ -108,11 +118,19 @@ nav .scroll {
   color: grey;
 }
 #first #opis #buttons button i {
-  color: rgba(255, 255, 255, 0.884);
+  color: grey;
+  transition-duration: 0.3s;
+}
+#first #opis #buttons button a {
+  text-decoration: none;
+  color: grey;
 }
 #first #opis #buttons button:hover {
   color: #DDF7E3;
   background-color: #1b1b1b;
+}
+#first #opis #buttons button:hover a, #first #opis #buttons button:hover i {
+  color: #DDF7E3;
 }
 
 #second {
@@ -162,4 +180,85 @@ nav .scroll {
 }
 #second #JS {
   height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  #dos {
+    height: 100px;
+  }
+}
+#app {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+#app .product-list {
+  padding: 0;
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#app .product-list .prod-item {
+  transition-duration: 0.4s;
+  padding: 9px 9px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 217px;
+}
+#app .product-list #ram {
+  transition-duration: 0.4s;
+  width: 100%;
+  min-height: 180px;
+  border-radius: 10px;
+  background-color: #161616;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+}
+#app .product-list #ram .obraz {
+  width: 40%;
+}
+#app .product-list #ram .obraz img {
+  width: 100%;
+  border-radius: 7px;
+  height: auto;
+}
+#app .product-list #ram .kontent {
+  padding-top: 30px;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+#app .product-list #ram .kontent h1 {
+  font-size: 20px;
+}
+#app .product-list #ram .kontent h1 a {
+  color: #C84B31;
+  list-style-type: none;
+  text-decoration: none;
+}
+#app .product-list #ram .kontent h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+  color: #ECDBBA;
+  padding-top: 20px;
+}
+#app .product-list .prod-item:hover {
+  padding: 9px 1px;
+}
+#app .product-list .prod-item:hover #ram {
+  width: 100%;
+  min-height: 190px;
 }/*# sourceMappingURL=website.css.map */

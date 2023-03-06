@@ -22,21 +22,19 @@ buttons.forEach((button) => {
 
   ScrollReveal().reveal('#opis #buttons button', { delay: 200, origin: 'left', distance: '20%', interval: 500});
 
-
-
-
+  
+  
   const dos = document.getElementById("dos");
   const dos_el = document.querySelectorAll("#dos div");
 
   const i = document.querySelectorAll("i");
-  console.log(dos_el);
   if (window.outerWidth < 1200 && window.outerWidth > 930) {
     dos.style.cssText = `height: 400px; padding: 80px 0px;`;
     dos_el.forEach((el) => {
       el.style.cssText = `min-width: 200px;`;
     });
   } else if (window.outerWidth < 920 && window.outerWidth > 600) {
-    dos.style.cssText = `height: 350px; padding: 100px 0px; `;
+    dos.style.cssText = `height: 200px; padding: 100px 0px; `;
     dos_el.forEach((el) => {
       el.style.cssText = `min-width: 200px; font-size: 15px;`;
     });
@@ -45,6 +43,7 @@ buttons.forEach((button) => {
     });
   } else if (window.outerWidth < 600) {
     dos.style.cssText = `display: grid; width: 100vw; height: auto; padding: 100px 0px; margin-bottom: 1000px; `;
+    
     dos_el.forEach((el) => {
       el.style.cssText = `min-width: 200px;width: 50vw; font-size: 15px; height: auto;`;
     });
@@ -54,3 +53,5 @@ buttons.forEach((button) => {
     dos_el[0].style.paddingBottom = "70px";
     dos_el[1].style.paddingBottom = "70px";
   }
+
+  console.log($('#dos'));

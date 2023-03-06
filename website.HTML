@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/website.css">
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
 
@@ -21,6 +22,11 @@
                 <a href="#"><button id="languages" class="Nav-el">languages</button></a>
                 <a href="#"><button id="infos" class="Nav-el">infos</button></a>
                 <a href="#"><button id="contact" class="Nav-el">contact</button></a>
+                <div id="burger">
+                    <div id="jeden"></div>
+                    <div id="dwa"></div>
+                    <div id="trzy"></div>
+                </div>
             </div>
         </div>
     </nav>
@@ -31,14 +37,14 @@
             <h3>Hi, I'm Jakub Myrta</h3>
             <h1>I'm 16 y.o student from gdańsk. I would like to become a front-end developer</h1>
             <div id="buttons">
-                <button><i class="fa-brands fa-github"></i> GITHUB<span></span></button>
+                <button><i class="fa-brands fa-github"></i><a href="https://github.com/mkuba2006">GITHUB</a><span></span></button>
                 <button><i class="fa-brands fa-linkedin"></i> MORE</button>
             </div>
         </div>
     </section>
 
 
-
+    <div id="app"></div>
 
 
     <section id="second">
@@ -64,6 +70,7 @@
     </section>
     
 <script src="scripts/website.js"></script>
+<script src="scripts/songs.js"></script>
 </body>
 </html>
 
