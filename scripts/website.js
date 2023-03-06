@@ -21,7 +21,6 @@ buttons.forEach((button) => {
   ScrollReveal().reveal('#opis #buttons', { delay: 600, origin: 'left', distance: '30%'});
 
   ScrollReveal().reveal('#opis #buttons button', { delay: 200, origin: 'left', distance: '20%', interval: 500});
-
   
   
   const dos = document.getElementById("dos");
