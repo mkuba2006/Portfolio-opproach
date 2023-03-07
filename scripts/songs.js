@@ -57,6 +57,11 @@ class product{
 class rnd{
     render(){
         const renderHook = document.getElementById("app");
+        const title = document.createElement("h1");
+        title.textContent ="My favourite songs 🎵";
+        ScrollReveal().reveal(title, { delay: 400, origin: 'left', distance: '30%'});
+        title.className ="title-songs";
+        renderHook.append(title);
         const productList = new productlist();
         const prodListEl = productList.render();
         renderHook.append(prodListEl);
