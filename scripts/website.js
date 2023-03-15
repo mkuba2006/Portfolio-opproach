@@ -19,7 +19,7 @@ buttons.forEach((button) => {
   ScrollReveal().reveal('#opis h3', { delay: 200, origin: 'left', distance: '30%'});
   ScrollReveal().reveal('#opis h1', { delay: 400, origin: 'left', distance: '30%'});
   ScrollReveal().reveal('#opis #buttons', { delay: 600, origin: 'left', distance: '30%'});
-
+  ScrollReveal().reveal('#opis2 img', { delay: 600, origin: 'bottom', distance: '10%'});
   ScrollReveal().reveal('#opis #buttons button', { delay: 200, origin: 'left', distance: '20%', interval: 500});
   
   
@@ -53,4 +53,24 @@ buttons.forEach((button) => {
     dos_el[1].style.paddingBottom = "70px";
   }
 
-  console.log($('#dos'));
+  // console.log($('#dos'));
+
+function func() {
+  const bubble =  document.querySelector('.redBubble p');
+
+  const Data = new Date('September 10, 2021 10:00:00');
+  let tDay = new Date();
+  var crok = tDay.getFullYear() - Data.getFullYear();
+  var cdni =  tDay.getDay() - Data.getDay();
+  cdni = Math.floor(cdni/(1000*60*60*24)) +1;
+
+  var cgodz = tDay.getHours() - Data.getHours();
+  var cmin = tDay.getMinutes() - Data.getMinutes();
+  var csek = tDay.getSeconds() - Data.getSeconds();
+  var cmilsek = tDay.getMilliseconds() - Data.getMilliseconds();
+
+  bubble.textContent = `${crok}.${cdni}${cgodz}${cmin}${csek}${cmilsek}`;
+
+  setTimeout(func, 10);
+}
+func();
