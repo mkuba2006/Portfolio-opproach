@@ -13,13 +13,13 @@
 <body>
 
     <nav>
-        <div class="in-nav">
+        <div class="in-nav" id="nav">
             <div id="one" >
                 <div id="logo">JM*Sui</div>
             </div>
             <div class="two">
-                <a href="#second"><button id="about" class="Nav-el" >about</button></a>
-                <a href="#"><button id="languages" class="Nav-el">languages</button></a>
+                <a href="#about"><button id="about" class="Nav-el" >about</button></a>
+                <a href="#about"><button id="languages" class="Nav-el">languages</button></a>
                 <a href="#"><button id="infos" class="Nav-el">infos</button></a>
                 <a href="#"><button id="contact" class="Nav-el">contact</button></a>
                 <div id="burger">
@@ -34,17 +34,16 @@
 
     <section id="first">
         <div id="opis">
-
-                  <div class="navUL">
-                        <h3> &#9995 Hi, I'm Jakub Myrta</h3>
-                        <div class="redBubble bubblePosition hoverBubble">
-                            <p>Lorem</p>
-                        </div>
-                </div>
-
-
-
-            <h1>I'm 16 y.o student from gdańsk. I would like to become a front-end developer</h1>
+                <div class="navUL">
+                    <h3> &#9995 Hi, my name is</h3>
+                    <div class="redBubble bubblePosition hoverBubble">
+                        <p>Lorem</p>
+                    </div>
+               </div>
+               <h1 id="myname">Jakub Myrta.</h1>
+            <h1>I'm
+                <span class="p">16 y.o <div class="redBubble bubblePosition hoverBubble"><p>Lorem</p></div></span>   
+                student from gdańsk. I would like to become a front-end developer</h1>
             <div id="buttons">
                 <button><i class="fa-brands fa-github"></i><a href="https://github.com/mkuba2006">GITHUB</a><span></span></button>
                 <button><i class="fa-brands fa-linkedin"></i> MORE</button>
@@ -55,15 +54,81 @@
             <img src="/IMG/me.jpg">
         </div>
     
+    </section>
+
+
+
+
+
+
+    <section id="about">
+
+        <div id="container">
+            <h3><span>About ME</span></h3>
+            <div id="rest">
+                <div id="text">
+                    <p>
+                        Hi! My name is Jakub Myrta and programming is a huge part of my life. I have been learning programming for 2 years. My goal is to become a Front-End developer.
+                    </br></br>
+                        My passion was born thanks to my computer science teacher, who was a full stack developer. 
+                        He showed me a lot of things like: node.js, vue.js, many JS libraries and others. I was very interested in it and that's how my teaser was born.
+                    </br></br>
+                    </p>
+                </div>
+
+                <div id="image">
+                    <img src="/IMG/me2.jpg">
+                </div>
+            </div>
+        </div>
 
 
     </section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div id="app"></div>
 
 
-    <section id="second">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="four">
         <div id="dos" >
             <div id="HTML">
               <i class="fa-brands fa-html5"></i>
@@ -91,19 +156,17 @@
             <center>
                 <h1>Message me💬</h1>
             </center>
-            <form>
-                <label for="#name_form">Name:
-                    <input type="text" id="name_form" >
-                </label>
+            <form action="https://formsubmit.co/9921724cfdd2e5dab1fe1196b9c58239 " method="POST">
+                <label for="#name_form">Name:</label>
+                    <input type="text" id="name_form"  name="name" required>
+            
+                <label for="#name_form">Email:</label>
+                    <input type="email" id="email_form" name="email" required>
+                
+                <label for="#name_form">Content:</label>
+                    <textarea id="content_form" rows="4" name="message" required></textarea>
 
-                <label for="#name_form">Email:
-                    <input type="email" id="email_form">
-                </label>
-
-                <label for="#name_form">Content:
-                    <textarea id="content_form" rows="4"></textarea>
-                </label>
-                    <input type="submit" id="send" placeholder="Send">
+                <input type="submit" id="send" placeholder="Send">
             </form>
         </div>
     </section>
@@ -111,8 +174,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script src="scripts/website.js"></script>
 <script src="scripts/songs.js"></script>
 <script src="scripts/form.js"></script>
+<script src="scripts/nav.js"></script>
 </body>
 </html>

@@ -12,10 +12,8 @@ buttons.forEach((button) => {
   ScrollReveal().reveal('#one',{origin: 'left', distance: '30%'});
   ScrollReveal().reveal('.two a', {delay: 500, origin: 'left', distance: '130%', interval: 200});
   ScrollReveal().reveal('.two a button', {delay: 500, origin: 'left', distance: '30%', interval: 200});
-
   ScrollReveal().reveal('.addon .n', { origin: 'bottom', interval: 200});
   ScrollReveal().reveal('#dos div', { delay: 200, origin: 'left', distance: '30%', interval: 200});
-
   ScrollReveal().reveal('#opis h3', { delay: 200, origin: 'left', distance: '30%'});
   ScrollReveal().reveal('#opis h1', { delay: 400, origin: 'left', distance: '30%'});
   ScrollReveal().reveal('#opis #buttons', { delay: 600, origin: 'left', distance: '30%'});
@@ -53,24 +51,20 @@ buttons.forEach((button) => {
     dos_el[1].style.paddingBottom = "70px";
   }
 
-  // console.log($('#dos'));
-
 function func() {
-  const bubble =  document.querySelector('.redBubble p');
-
-  const Data = new Date('September 10, 2021 10:00:00');
+  const bubble = document.querySelector("#opis > h1:nth-child(3) > span > div > p");
+  // const Data = new Date('September 10, 2021 10:00:00');
+  const Data = new Date('October 5, 2007 01:00:00');
   let tDay = new Date();
   var crok = tDay.getFullYear() - Data.getFullYear();
   var cdni =  tDay.getDay() - Data.getDay();
   cdni = Math.floor(cdni/(1000*60*60*24)) +1;
-
   var cgodz = tDay.getHours() - Data.getHours();
   var cmin = tDay.getMinutes() - Data.getMinutes();
   var csek = tDay.getSeconds() - Data.getSeconds();
   var cmilsek = tDay.getMilliseconds() - Data.getMilliseconds();
-
   bubble.textContent = `${crok}.${cdni}${cgodz}${cmin}${csek}${cmilsek}`;
-
   setTimeout(func, 10);
 }
 func();
+
