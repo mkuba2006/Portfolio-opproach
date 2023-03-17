@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 html {
   font-family: "Indie Flower", cursive;
   color: #BC6FF1;
@@ -30,6 +31,7 @@ nav nav.scroll-down {
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
 }
 nav #logo {
+  cursor: pointer;
   height: auto;
   font-size: 75px;
   font-weight: 900;
@@ -62,6 +64,7 @@ nav #two {
   width: 100%;
 }
 nav .Nav-el {
+  cursor: pointer;
   font-family: "Montserrat", sans-serif;
   padding: 6px 11px 6px 11px;
   border: 1px solid #1b1b1b;
@@ -118,6 +121,7 @@ nav .scroll {
 #first #opis h1 span {
   -webkit-text-decoration: underline 2px solid aliceblue;
           text-decoration: underline 2px solid aliceblue;
+  cursor: pointer;
 }
 #first #opis #myname {
   margin: 0;
@@ -393,42 +397,41 @@ h3 {
   justify-content: left;
 }
 
-#form {
-  background-color: #010206;
-  position: relative;
-  width: 100%;
-  padding-top: 18%;
-  bottom: 100px;
-}
-#form #fform {
-  font-family: "Montserrat", sans-serif;
-  background-color: #161616;
-  padding: 6px 1px;
-  border-radius: 9px;
-  width: 400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#form #fform label {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  font-size: 20px;
+#contact #container {
   color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  width: 70%;
+  margin: 0 auto;
+  padding: 4% 15% 4% 15%;
+  background-color: #0e0e0f;
 }
-#form #fform h1 {
-  font-size: 40px;
+#contact #container #one {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+#contact #container #one #fform {
+  font-family: "Montserrat", sans-serif;
+  padding: 6px 14px;
+  border-radius: 9px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  width: 400px;
+}
+#contact #container #one #fform h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 29px;
   margin: 20px 0 20px 0;
 }
-#form #fform input, #form #fform textarea {
+#contact #container #one #fform form {
+  padding: 0 10px 0 0;
+}
+#contact #container #one #fform form input, #contact #container #one #fform form textarea {
   resize: none;
-  margin: 0 auto;
   color: aliceblue;
-  border-radius: 7px;
   width: 320px;
-  margin: 5px;
+  margin: 5px 0 0 0;
   line-height: 24px;
   background: none;
   border: 1px solid #2e2e31;
@@ -438,10 +441,68 @@ h3 {
   font-size: 17px;
   font-weight: 500;
 }
-#form #fform #send {
-  border: none;
-  margin: 10px auto 0 auto;
-  background-color: #2e2e31;
+#contact #container #one #fform form .slide:hover,
+#contact #container #one #fform form .slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+#contact #container #one #fform form .slide {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+#contact #container #one #fform form button {
+  color: var(--color);
+  transition: 0.25s;
+}
+#contact #container #one #fform form button:hover, #contact #container #one #fform form button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+#contact #container #one #fform form button {
+  background: none;
+  border: 1px solid;
+  font: inherit;
+  line-height: 1;
+  margin-top: 0.5em;
+  font-size: 20px;
+  padding: 10px 26px;
+}
+#contact #container #one #media {
+  width: 400px;
+  font-family: "Poppins", sans-serif;
+}
+#contact #container #one #media h1 {
+  font-size: 29px;
+}
+#contact #container #one #media h1 span {
+  color: #FFB84C;
+}
+#contact #container #one #media ul {
+  padding: 0;
+  line-height: 250%;
+}
+#contact #container #one #media ul li {
+  list-style-type: none;
+  transition: 0.4s;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+#contact #container #one #media ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+#contact #container #one #media ul li:hover {
+  letter-spacing: 5.5px;
+}
+#contact #container #prawa {
+  font-weight: 700;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+#contact #container #prawa span {
+  color: #DF2E38;
+  padding: 0 5px;
 }
 
 @media screen and (max-width: 1250px) {
