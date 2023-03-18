@@ -13,6 +13,18 @@ body {
   background-color: #010206;
 }
 
+.toggle .line_one {
+  transform: rotate(-45deg) translate(-9px, 4px);
+}
+
+.toggle .line_dwo {
+  opacity: 0;
+}
+
+.toggle .line_three {
+  transform: rotate(45deg) translate(-9px, -4px);
+}
+
 nav {
   padding-top: 20px;
   background-color: rgba(0, 0, 0, 0.877);
@@ -60,9 +72,6 @@ nav #logo {
 nav #logo:hover {
   background-color: rgba(27, 27, 27, 0.5058823529);
 }
-nav #two {
-  width: 100%;
-}
 nav .Nav-el {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
@@ -74,10 +83,13 @@ nav .Nav-el {
   background-color: black;
   transition-duration: 0.4s;
 }
+nav #burger {
+  display: none;
+}
 nav #burger div {
   display: none;
   cursor: pointer;
-  width: 30px;
+  width: 26px;
   height: 4px;
   margin: 5px;
   background-color: #fdfdfd;
@@ -166,7 +178,7 @@ nav .scroll {
   width: 250px;
   border-radius: 50%;
   height: auto;
-  box-shadow: rgba(5, 151, 224, 0.774) 6px 2px 16px 0px, rgba(221, 15, 15, 0.774) -6px -2px 16px 0px;
+  box-shadow: rgba(5, 151, 224, 0.774) 6px 2px 16px 0px, rgba(192, 49, 49, 0.774) -6px -2px 16px 0px;
 }
 
 section#about {
@@ -259,11 +271,6 @@ section#about #container #rest #image img {
   height: 100%;
 }
 
-@media screen and (max-width: 992px) {
-  #dos {
-    height: 100px;
-  }
-}
 #app {
   background-color: #010206;
   padding-top: 18%;
@@ -405,12 +412,13 @@ h3 {
   padding: 4% 15% 4% 15%;
   background-color: #0e0e0f;
 }
-#contact #container #one {
+#contact #container #ones {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 100px;
 }
-#contact #container #one #fform {
+#contact #container #ones #fform {
   font-family: "Montserrat", sans-serif;
   padding: 6px 14px;
   border-radius: 9px;
@@ -419,15 +427,15 @@ h3 {
   flex-direction: column;
   width: 400px;
 }
-#contact #container #one #fform h1 {
+#contact #container #ones #fform h1 {
   font-family: "Poppins", sans-serif;
   font-size: 29px;
   margin: 20px 0 20px 0;
 }
-#contact #container #one #fform form {
+#contact #container #ones #fform form {
   padding: 0 10px 0 0;
 }
-#contact #container #one #fform form input, #contact #container #one #fform form textarea {
+#contact #container #ones #fform form input, #contact #container #ones #fform form textarea {
   resize: none;
   color: aliceblue;
   width: 320px;
@@ -441,23 +449,23 @@ h3 {
   font-size: 17px;
   font-weight: 500;
 }
-#contact #container #one #fform form .slide:hover,
-#contact #container #one #fform form .slide:focus {
+#contact #container #ones #fform form .slide:hover,
+#contact #container #ones #fform form .slide:focus {
   box-shadow: inset 6.5em 0 0 0 var(--hover);
 }
-#contact #container #one #fform form .slide {
+#contact #container #ones #fform form .slide {
   --color: #8fc866;
   --hover: #66c887;
 }
-#contact #container #one #fform form button {
+#contact #container #ones #fform form button {
   color: var(--color);
   transition: 0.25s;
 }
-#contact #container #one #fform form button:hover, #contact #container #one #fform form button:focus {
+#contact #container #ones #fform form button:hover, #contact #container #ones #fform form button:focus {
   border-color: var(--hover);
   color: #fff;
 }
-#contact #container #one #fform form button {
+#contact #container #ones #fform form button {
   background: none;
   border: 1px solid;
   font: inherit;
@@ -466,32 +474,44 @@ h3 {
   font-size: 20px;
   padding: 10px 26px;
 }
-#contact #container #one #media {
+#contact #container #ones #media {
   width: 400px;
   font-family: "Poppins", sans-serif;
 }
-#contact #container #one #media h1 {
+#contact #container #ones #media h1 {
   font-size: 29px;
 }
-#contact #container #one #media h1 span {
+#contact #container #ones #media h1 span {
   color: #FFB84C;
 }
-#contact #container #one #media ul {
+#contact #container #ones #media ul {
   padding: 0;
   line-height: 250%;
 }
-#contact #container #one #media ul li {
-  list-style-type: none;
-  transition: 0.4s;
-  letter-spacing: 1.2px;
-  cursor: pointer;
-}
-#contact #container #one #media ul li a {
+#contact #container #ones #media ul a {
   text-decoration: none;
   color: aliceblue;
 }
-#contact #container #one #media ul li:hover {
+#contact #container #ones #media ul a li {
+  list-style-type: none;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#contact #container #ones #media ul a li:hover {
   letter-spacing: 5.5px;
+}
+#contact #container #ones #media ul a:nth-child(1):hover {
+  color: #4267B2;
+}
+#contact #container #ones #media ul a:nth-child(2):hover {
+  color: #FFDC80;
+}
+#contact #container #ones #media ul a:nth-child(3):hover {
+  color: #0072b1;
+}
+#contact #container #ones #media ul a:nth-child(4):hover {
+  color: #6cc644;
 }
 #contact #container #prawa {
   font-weight: 700;
@@ -631,7 +651,7 @@ h3 {
   nav #logo:hover {
     background-color: rgba(27, 27, 27, 0.5058823529);
   }
-  nav #two {
+  nav nav {
     width: 100%;
   }
   nav .Nav-el {
@@ -643,16 +663,6 @@ h3 {
     font-size: 16px;
     background-color: black;
     transition-duration: 0.4s;
-  }
-  nav #burger div {
-    display: none;
-    cursor: pointer;
-    width: 30px;
-    height: 4px;
-    margin: 5px;
-    background-color: #fdfdfd;
-    padding-left: 3%;
-    transition: all 0.3s ease;
   }
   #app .product-list {
     padding: 0;
@@ -674,6 +684,39 @@ h3 {
     max-width: 125px;
     min-height: 125px;
     max-height: 125px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #dos {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 880px) {
+  nav #burger {
+    display: block;
+  }
+  #burger #jeden, #burger #dwa, #burger #trzy {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+  }
+  #nav > div:nth-child(2) {
+    position: absolute;
+    right: 0px;
+    height: 83vh;
+    top: 16.9999vh;
+    background-color: rgba(0, 0, 0, 0.877);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  #nav > div:nth-child(2).nav_active {
+    transform: translateX(0%);
   }
 }
 @media screen and (max-width: 774px) {

@@ -20,37 +20,17 @@ body{
   margin: 0;
   background-color: #010206; 
 }
-// .addon{
-//     z-index: 1;
-//     padding: 15vh 0 0 2vw;
-//     position: absolute;
-//     width: 100px;
-//     height: max-content;
-//     .n1{
-//         border-radius: 7px;
-//         margin-bottom: 2vh;
-//         height: 200px;
-//         background-color: #F6F7C1;
-//     }
-//     .n2{
-//         border-radius: 7px;
-//         margin-bottom: 2vh;
-//         height: 350px;
-//         background-color: #BEF0CB;
-//     }
-//     .n3{
-//         border-radius: 7px;
-//         margin-bottom: 2vh;
-//         height: 120px;
-//         background-color: #D1FFF3;
-//     }
-//     .n4{
-//         border-radius: 7px;
-//         margin-bottom: 2vh;
-//         height: 190px;
-//         background-color: #C1AEFC;
-//     }
-// }
+.toggle .line_one {
+  transform: rotate(-45deg) translate(-9px, 4px);
+}
+.toggle .line_dwo {
+  opacity: 0;
+}
+.toggle .line_three {
+  transform: rotate(45deg) translate(-9px, -4px);
+}
+
+
 
 nav{
   padding-top: 20px;
@@ -88,9 +68,7 @@ nav{
   #logo:hover{
     background-color: #1b1b1b81;
   }
-  #two{
-    width: 100%;
-  }
+
   .Nav-el{
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
@@ -102,10 +80,13 @@ nav{
     background-color: black;
     transition-duration: 0.4s;
   }
+  #burger{
+    display: none;
+  }
   #burger div {
     display: none;
     cursor: pointer;
-    width: 30px;
+    width: 26px;
     height: 4px;
     margin: 5px;
     background-color: #fdfdfd;
@@ -200,7 +181,7 @@ nav{
       width: 250px;
       border-radius: 50%;
       height: auto;
-      box-shadow: rgba(5, 151, 224, 0.774) 6px 2px 16px 0px, rgba(221, 15, 15, 0.774) -6px -2px 16px 0px;
+      box-shadow: rgba(5, 151, 224, 0.774) 6px 2px 16px 0px, rgba(192, 49, 49, 0.774) -6px -2px 16px 0px;
     }
   }
 }
@@ -261,7 +242,7 @@ section#about{
 
 
 #four{
-    background-color: #010206; //////////////////////////////////////////////////////////////////////////////////////////////////
+    background-color: #010206; 
     padding-top: 18%;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
@@ -316,13 +297,6 @@ i {
   }
 }
 
-@media screen and (max-width: 992px) {
-  #dos {
-    height: 100px;
-  }
-}
-
-
 #app{
   background-color: #010206; //////////////////////////////////////////////////////////////////////////////////////////////
   padding-top: 18%;
@@ -351,18 +325,18 @@ i {
         justify-content: center;
         min-height: 150px;
       }
-        #ram{
-          transition-duration: 0.4s;
-          width: 100%;
-          min-height: 130px;
-          max-height: 130px;
-          border-radius: 10px;
-          background-color: #161616;
-          list-style-type: none;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 4px 12px;
+      #ram{
+        transition-duration: 0.4s;
+        width: 100%;
+        min-height: 130px;
+        max-height: 130px;
+        border-radius: 10px;
+        background-color: #161616;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 12px;
         .obraz{
           width: 40%;
           img{
@@ -401,26 +375,20 @@ i {
         }
       }
 
-          .prod-item:hover{
-            padding: 9px 1px;
-            #ram{
-              width: 100%;
-              min-height: 140px;
-          }
-        }
-    
+    .prod-item:hover{
+      padding: 9px 1px;
+      #ram{
+        width: 100%;
+        min-height: 140px;
+      }
+    }
   }
 }
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 h3{
   color: $el3;
 }
-
-
-
 .hoverBubble {
   background: #333333;
   color: #ffffff;
@@ -471,7 +439,6 @@ h3{
 }
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 #contact{
@@ -484,10 +451,10 @@ h3{
     padding: 4% 15% 4% 15%;
     background-color: #0e0e0f;
     
-    
-    #one{
+    #ones{
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 100px;
       #fform{
       font-family: 'Montserrat', sans-serif;
@@ -565,18 +532,32 @@ h3{
       ul{
         padding: 0;
         line-height: 250%;
-        li{
-          list-style-type: none;
-          transition: 0.4s;
-          letter-spacing: 1.2px;
-          cursor: pointer;
-          a{
-            text-decoration: none;
-            color: aliceblue;
+        a{
+          text-decoration: none;
+          color: aliceblue;
+          
+          li{
+            list-style-type: none;
+            letter-spacing: 1.2px;
+            cursor: pointer;
+            transition: 0.4s;
           }
         }
-        li:hover{
+        a li:hover{
           letter-spacing: 5.5px;
+          
+        }
+        a:nth-child(1):hover{
+          color: #4267B2;
+        }
+        a:nth-child(2):hover{
+          color: #FFDC80;
+        }
+        a:nth-child(3):hover{
+          color: #0072b1;
+        }
+        a:nth-child(4):hover{
+          color: #6cc644;
         }
       }
     }
@@ -598,7 +579,7 @@ h3{
 
 
 
-
+//MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 @media screen and (max-width: 1250px) {
@@ -621,7 +602,7 @@ h3{
   }
 
   #second{
-    background-color: #010206; //////////////////////////////////////////////////////////////////////////////////////////////////
+    background-color: #010206;
     padding-top: 18%;
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
@@ -674,7 +655,7 @@ i {
   
 
   #second{
-    background-color: #010206; //////////////////////////////////////////////////////////////////////////////////////////////////
+    background-color: #010206;
     padding-top: 18%;
     font-family: 'Montserrat', sans-serif;
     width: 100vw;
@@ -746,7 +727,7 @@ nav{
   #logo:hover{
     background-color: #1b1b1b81;
   }
-  #two{
+  nav{
     width: 100%;
   }
   .Nav-el{
@@ -758,17 +739,6 @@ nav{
     font-size: 16px;
     background-color: black;
     transition-duration: 0.4s;
-  }
-  #burger div {
-    display: none;
-    cursor: pointer;
-    width: 30px;
-    height: 4px;
-    margin: 5px;
-    background-color: #fdfdfd;
-    
-    padding-left: 3%;
-    transition: all 0.3s ease;
   }
 
 }
@@ -803,6 +773,41 @@ nav{
 }
 }
 
+@media screen and (max-width: 992px) {
+  #dos {
+    height: 100px;
+  }
+}
+
+
+@media screen and (max-width:880px) {
+  nav #burger{
+    display: block;
+  }
+  #burger #jeden, #burger #dwa, #burger #trzy{
+    display: block;
+    cursor: pointer;
+    width: 30px;
+  }
+  #nav > div:nth-child(2){
+      position: absolute;
+      right: 0px;
+      height: 83vh;
+      top: 16.9999vh;
+      background-color: rgba(0, 0, 0, 0.877);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+  }
+  #nav > div:nth-child(2).nav_active {
+    transform: translateX(0%);
+  }
+}
 
 @media screen and (max-width: 774px) {
 
