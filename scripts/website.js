@@ -14,7 +14,7 @@ buttons.forEach((button) => {
   const dos = document.getElementById("dos");
   const dos_el = document.querySelectorAll("#dos div");
 
-  const i = document.querySelectorAll("i");
+  const i = document.querySelectorAll("#dos i");
   if (window.outerWidth < 1200 && window.outerWidth > 930) {
     dos.style.cssText = `height: 400px; padding: 80px 0px;`;
     dos_el.forEach((el) => {
