@@ -386,6 +386,131 @@ i {
 }
 
 
+#appl{
+  background-color: #010206;
+  font-family: 'Montserrat', sans-serif;
+  height: 82vh;
+  .products{
+    padding: 0;
+    width: 1200px;
+    margin: 0 auto ;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .item{
+      transition-duration: 0.4s;
+      padding: 9px 9px;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+
+      .ram{
+        transition-duration: 0.4s;
+        width: 100%;
+        min-height: 180px;
+        max-height: 180px;
+        border-radius: 10px;
+        background-color: #161616;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 12px;
+        .for_img{
+          transition-duration: 0.4s;
+          justify-content: center;
+          align-items: center;
+          padding: auto 0 auto 0;
+          min-height: 180px;
+          img{
+            transition-duration: 0.4s;
+            object-fit: cover;
+            width: 90%;
+            border-radius: 7px;
+            height: auto;
+            padding-top: 5px;
+            min-width: 119px;
+            max-width: 140px;
+          }
+        }
+      }
+      .content{
+        width: 60%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        padding: 0 5px 0 5px;
+        h1{
+          transition-duration: 0.4s;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .item:hover{
+    padding: 2px 1px;
+    .ram{
+      width: 100%;
+      min-height: 190px;
+      .for_img{
+        transition-duration: 0.4s;
+        justify-content: center;
+        align-items: center;
+        padding: auto 0 auto 0;
+        min-height: 180px;
+        img{
+          transition-duration: 0.4s;
+          object-fit: cover;
+          width: 90%;
+          border-radius: 7px;
+          height: auto;
+          padding-top: 5px;
+          min-width: 129px;
+          max-width: 140px;
+        }
+      }
+    }
+    .content{
+      h1{
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 h3{
   color: $el3;
 }
