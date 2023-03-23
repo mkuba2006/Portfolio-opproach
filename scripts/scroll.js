@@ -20,3 +20,6 @@ ScrollReveal().reveal('#prawa', {delay: 200, origin: 'bottom', distance: '40%'})
 
 ScrollReveal().reveal('#app .title-songs', {origin: 'left', distance: '5%'});
 ScrollReveal().reveal('#app .product-list .prod-item', {delay: 200, origin: 'bottom', distance: '20%',interval: 100});
+
+ScrollReveal().reveal("#appl .products .item", {delay: 200, origin: 'bottom', distance: '20%',interval: 100});
+

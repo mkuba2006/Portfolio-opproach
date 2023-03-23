@@ -20,7 +20,3 @@ burger.addEventListener("click", () => {
   });
 });
 
-
-console.log(navl);
-console.log(nav_links);
-console.log(burger);

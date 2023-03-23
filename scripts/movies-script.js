@@ -5,7 +5,7 @@ const render = (movies) =>{
     container.innerHTML=``;
     for(let i =0; i<= movies.length;i++){
         const item = document.createElement('li');
-        item.className = `item item${movies[i].id}`;
+        item.className = `item`;
         item.innerHTML=`
         <div class="ram">
             <div class="for_img" id="for_img${movies[i].id}">
