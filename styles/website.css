@@ -8,7 +8,6 @@ html {
 }
 
 body {
-  height: 100vh;
   margin: 0;
   background-color: #010206;
 }
@@ -115,35 +114,39 @@ nav .scroll {
   justify-content: left;
   align-items: center;
 }
-#first #opis {
+#first #cont {
+  width: 100%;
+  display: flex;
+}
+#first #cont #opis {
   width: 35%;
   padding: 9% 1% 12% 16%;
   margin-right: 100px;
 }
-#first #opis h3 {
+#first #cont #opis h3 {
   font-size: 12px;
   color: #7f8799;
   letter-spacing: 1.5px;
 }
-#first #opis h1 {
+#first #cont #opis h1 {
   color: #7f8799;
   font-size: 30px;
   margin: 20px 0 20px 0;
 }
-#first #opis h1 span {
+#first #cont #opis h1 span {
   -webkit-text-decoration: underline 2px solid aliceblue;
           text-decoration: underline 2px solid aliceblue;
   cursor: pointer;
 }
-#first #opis #myname {
+#first #cont #opis #myname {
   margin: 0;
   font-size: 40px;
   color: #FFB84C;
 }
-#first #opis #buttons {
+#first #cont #opis #buttons {
   width: 80%;
 }
-#first #opis #buttons button {
+#first #cont #opis #buttons button {
   transition-duration: 0.3s;
   background-color: #000000;
   border: 2px solid #1b1b1b;
@@ -155,24 +158,26 @@ nav .scroll {
   padding: 10px 18px;
   color: grey;
 }
-#first #opis #buttons button i {
+#first #cont #opis #buttons button i {
   color: grey;
   transition-duration: 0.3s;
 }
-#first #opis #buttons button a {
+#first #cont #opis #buttons button a {
   text-decoration: none;
   color: grey;
 }
-#first #opis #buttons button:hover {
+#first #cont #opis #buttons button:hover {
   color: #DDF7E3;
   background-color: #1b1b1b;
 }
-#first #opis #buttons button:hover a, #first #opis #buttons button:hover i {
+#first #cont #opis #buttons button:hover a, #first #cont #opis #buttons button:hover i {
   color: #DDF7E3;
 }
 #first #opis2 {
   width: 20%;
-  padding: 0px 0px 150px 50px;
+  margin: auto;
+  position: relative;
+  right: 50px;
 }
 #first #opis2 img {
   width: 250px;
@@ -192,11 +197,11 @@ section#about {
   align-items: center;
 }
 section#about #container {
-  width: 70%;
+  width: 1500px;
   text-align: left;
 }
 section#about #container h3 {
-  margin-left: 290px;
+  margin-left: 350px;
   color: aliceblue;
 }
 section#about #container #rest {
@@ -360,6 +365,15 @@ section#about #container #rest #image img {
   font-family: "Montserrat", sans-serif;
   height: 82vh;
 }
+#appl .titlep {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFB84C;
+  font-size: 33px;
+  margin-bottom: 25px;
+}
 #appl .products {
   padding: 0;
   width: 1200px;
@@ -419,6 +433,7 @@ section#about #container #rest #image img {
   padding: 0 5px 0 5px;
 }
 #appl .products .item .content h1 {
+  color: #C84B31;
   transition-duration: 0.4s;
   width: 100%;
   display: flex;
@@ -431,7 +446,14 @@ section#about #container #rest #image img {
   font-size: 19px;
 }
 #appl .products .item .content select {
+  background-color: #161616;
+  border: none;
+  color: aliceblue;
   font-size: 16px;
+}
+#appl .products .item .content select option {
+  background-color: #161616;
+  border: none;
 }
 #appl .item:hover {
   padding: 2px 1px;
@@ -635,18 +657,52 @@ h3 {
   padding: 0 5px;
 }
 
+@media screen and (max-width: 1500px) {
+  section#about #container {
+    width: 700px;
+    text-align: left;
+    height: auto;
+  }
+  section#about #container h3 {
+    margin: 0;
+    color: aliceblue;
+  }
+  section#about #container #rest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #7f8799;
+  }
+  section#about #container #rest #text {
+    width: 350px;
+    font-size: 20px;
+  }
+  section#about #container #rest #image {
+    display: flex;
+    width: 250px;
+    margin: auto auto auto auto;
+    padding-bottom: 40px;
+    filter: blur(0.1px);
+  }
+  section#about #container #rest #image img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+}
 @media screen and (max-width: 1250px) {
-  #first #opis h1 {
+  #first #cont #opis h1 {
     font-size: 30px;
   }
-  #first #opis #buttons {
+  #first #cont #opis #buttons {
     width: 100%;
   }
-  #first #opis2 {
+  #first #cont #opis2 {
     width: 250px;
     padding: 0;
   }
-  #first #opis2 img {
+  #first #cont #opis2 img {
     width: 250px;
   }
   #second {
@@ -675,19 +731,57 @@ h3 {
   #second #dos > div {
     min-width: 250px;
   }
+  #appl .products {
+    width: 1000px;
+  }
+  #appl .products .item {
+    min-height: 120px;
+  }
+  #appl .products .item .ram {
+    min-height: 140px;
+    max-height: 140px;
+  }
+  #appl .products .item .ram .for_img {
+    min-height: 140px;
+  }
+  #appl .products .item .ram .for_img img {
+    min-width: 95px;
+    max-width: 100px;
+  }
+  #appl .products .item .ram .content h1 {
+    font-size: 18px;
+  }
+  #appl .products .item .ram .content h3 {
+    font-size: 15px;
+  }
+  #appl .item:hover .ram {
+    min-height: 150px;
+  }
+  #appl .item:hover .ram .for_img {
+    min-height: 140px;
+  }
+  #appl .item:hover .ram .for_img img {
+    min-width: 105px;
+  }
+  #appl .item:hover .ram .content h1 {
+    font-size: 20px;
+  }
+  #appl .item:hover .ram .content h3 {
+    font-size: 17px;
+  }
 }
 @media screen and (max-width: 1050px) {
-  #first #opis {
+  #first #cont #opis {
     width: 45%;
   }
-  #first #opis h1 {
+  #first #cont #opis h1 {
     font-size: 25px;
   }
-  #first #opis2 {
+  #first #cont #opis2 {
     width: 200px;
     padding: 0;
   }
-  #first #opis2 img {
+  #first #cont #opis2 img {
     width: 200px;
   }
   #second {
@@ -795,6 +889,47 @@ h3 {
     min-height: 125px;
     max-height: 125px;
   }
+  #appl .products {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+  }
+  #appl .products .item {
+    min-height: 120px;
+  }
+  #appl .products .item .ram {
+    min-height: 140px;
+    max-height: 140px;
+  }
+  #appl .products .item .ram .for_img {
+    min-height: 140px;
+  }
+  #appl .products .item .ram .for_img img {
+    min-width: 95px;
+    max-width: 100px;
+  }
+  #appl .products .item .ram .content h1 {
+    font-size: 18px;
+  }
+  #appl .products .item .ram .content h3 {
+    font-size: 15px;
+  }
+  #appl .item:hover .ram {
+    min-height: 153px;
+    max-height: 153px;
+  }
+  #appl .item:hover .ram .for_img {
+    min-height: 140px;
+  }
+  #appl .item:hover .ram .for_img img {
+    min-width: 105px;
+    max-width: 110px;
+  }
+  #appl .item:hover .ram .content h1 {
+    font-size: 20px;
+  }
+  #appl .item:hover .ram .content h3 {
+    font-size: 17px;
+  }
 }
 @media screen and (max-width: 992px) {
   #dos {
@@ -847,9 +982,40 @@ h3 {
     font-size: 10px;
   }
 }
-@media screen and (max-width: 774px) {
+@media screen and (max-width: 788px) {
+  body {
+    background-image: url(/svg2.svg);
+    background-repeat: repeat-y;
+  }
+  #first {
+    background-image: none;
+    padding-top: 5vh;
+  }
+  #first #cont {
+    width: 670px;
+    display: grid;
+    margin: 0 auto 0 auto;
+  }
+  #first #cont #opis {
+    order: 2;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin-right: 0px;
+  }
+  #first #cont #opis2 {
+    clear: both;
+    order: 1;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+  }
   #app {
     height: auto;
+    background: none;
   }
   #app .product-list {
     padding: 0;
@@ -872,6 +1038,12 @@ h3 {
     max-width: 125px;
     min-height: 125px;
     max-height: 125px;
+  }
+  #appl {
+    background: none;
+  }
+  #four {
+    background: none;
   }
 }
 @media screen and (max-width: 500px) {

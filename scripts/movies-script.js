@@ -16,9 +16,9 @@ const render = (movies) =>{
                 <h1>${movies[i].name}</h1>
                 <h3>${movies[i].date}</h3>
                 <select>
-                ${movies[i].gat1 ? `<option>${movies[i].gat1}</option>` : ''}
-                ${movies[i].gat2 ? `<option>${movies[i].gat2}</option>` : ''}
-                ${movies[i].gat3 ? `<option>${movies[i].gat3}</option>` : ''}
+                    ${movies[i].gat1 ? `<option>${movies[i].gat1}</option>` : ''}
+                    ${movies[i].gat2 ? `<option>${movies[i].gat2}</option>` : ''}
+                    ${movies[i].gat3 ? `<option>${movies[i].gat3}</option>` : ''}
                 </select>
             </div>
         </div>
@@ -27,5 +27,9 @@ const render = (movies) =>{
     }
 }
 
-
+const Title = document.createElement('div');
+Title.className = 'titlep';
+Title.textContent = `My favourite series 🎥`;
+document.querySelector('.products').before(Title);
+ScrollReveal().reveal(document.querySelector('.titlep'), { origin: 'left', distance: '10%'});
 document.onload = render(movies);

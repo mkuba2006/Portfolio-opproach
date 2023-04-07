@@ -16,7 +16,6 @@ html{
     color: $el3;
 }
 body{
-  height: 100vh;
   margin: 0;
   background-color: #010206; 
 }
@@ -118,65 +117,69 @@ nav{
   flex-wrap: wrap;
   justify-content: left;
   align-items: center;
-
-  #opis{
-    width: 35%;
-    padding: 9% 1% 12% 16% ;
-    margin-right: 100px;
-    h3{
-      font-size: 12px;
-      color: #7f8799;
-      letter-spacing: 1.5px;
-    }
-    h1{
-      color: #7f8799;
-      font-size: 30px;
-      margin: 20px 0 20px 0;
-      span{
-        text-decoration: underline 2px solid aliceblue;
-        cursor: pointer;
+  #cont{
+    width: 100%;
+    display: flex;
+    #opis{
+      width: 35%;
+      padding: 9% 1% 12% 16% ;
+      margin-right: 100px;
+      h3{
+        font-size: 12px;
+        color: #7f8799;
+        letter-spacing: 1.5px;
       }
-    }
-    #myname{
-      margin: 0;
-      font-size: 40px;
-      color: $green;
-    }
-    #buttons{
-      width: 80%;
-      button{
-        transition-duration: 0.3s;
-        background-color: $bg;
-        border: 2px solid $el4mod;
-        border-radius: 5px;
-        font-size: 20px;
-        width: 170px;
-        background-color: none;
-        text-decoration: none;
-        padding: 10px 18px ;
-        color: grey;
-        i{
-          color: grey;
+      h1{
+        color: #7f8799;
+        font-size: 30px;
+        margin: 20px 0 20px 0;
+        span{
+          text-decoration: underline 2px solid aliceblue;
+          cursor: pointer;
+        }
+      }
+      #myname{
+        margin: 0;
+        font-size: 40px;
+        color: $green;
+      }
+      #buttons{
+        width: 80%;
+        button{
           transition-duration: 0.3s;
-        }
-        a{
+          background-color: $bg;
+          border: 2px solid $el4mod;
+          border-radius: 5px;
+          font-size: 20px;
+          width: 170px;
+          background-color: none;
           text-decoration: none;
+          padding: 10px 18px ;
           color: grey;
+          i{
+            color: grey;
+            transition-duration: 0.3s;
+          }
+          a{
+            text-decoration: none;
+            color: grey;
+          }
         }
-      }
-      button:hover{
-        color: #DDF7E3;
-        background-color: $el4mod;
-        a, i{
+        button:hover{
           color: #DDF7E3;
+          background-color: $el4mod;
+          a, i{
+            color: #DDF7E3;
+          }
         }
       }
     }
   }
   #opis2{
     width: 20%;
-    padding: 0px 0px 150px 50px;
-    
+    margin: auto;
+    position: relative;
+    right: 50px;
     img{
       width: 250px;
       border-radius: 50%;
@@ -197,11 +200,11 @@ section#about{
   align-items: center;
 
   #container{
-    width: 70%;
+    width: 1500px;
     text-align: left;
 
     h3{
-      margin-left: 290px;
+      margin-left: 350px;
       color: aliceblue;
     }
     #rest{
@@ -390,6 +393,15 @@ i {
   background-color: #010206;
   font-family: 'Montserrat', sans-serif;
   height: 82vh;
+  .titlep{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $green;
+    font-size: 33px;
+    margin-bottom: 25px;
+  }
   .products{
     padding: 0;
     width: 1200px;
@@ -447,6 +459,7 @@ i {
         overflow: hidden;
         padding: 0 5px 0 5px;
         h1{
+          color: #C84B31;
           transition-duration: 0.4s;
           width: 100%;
           display: flex;
@@ -459,18 +472,16 @@ i {
           font-size: 19px;
         }
         select{
-          // display: flex;
-          // justify-content: center;
-          // padding: 5px auto 5px auto;
-          // outline: none;
-          // background: transparent;
-          // appearance: none;
-          // border-radius: 0;
-          // margin: 0;
-          // // display: block;
-          // color: $el3;
+          background-color: #161616;
+          border: none;
+          color: aliceblue;
           font-size: 16px;
+          option{
+            background-color: #161616;
+            border: none;
+          }
         }
+        
       }
     }
   }
@@ -725,22 +736,65 @@ h3{
 
 //MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+@media screen and (max-width:1500px){
+  section#about{
+    #container{
+      width: 700px;
+      text-align: left;
+      height: auto;
+      h3{
+        margin: 0;
+        color: aliceblue;
+      }
+      #rest{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: #7f8799;
+        #text{
+          width: 350px;
+          font-size: 20px;
+        }
+  
+        #image{
+          display: flex;
+          width: 250px;
+          margin: auto auto auto auto;
+          padding-bottom: 40px;
+          filter: blur(0.1px);
+          img{
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+
+
 
 @media screen and (max-width: 1250px) {
   #first{
-    #opis{
-      h1{
-        font-size: 30px;
+    #cont{
+      #opis{
+        h1{
+          font-size: 30px;
+        }
+        #buttons{
+          width: 100%;
+        }
       }
-      #buttons{
-        width: 100%;
-      }
-    }
-    #opis2{
-      width: 250px;
-      padding: 0;
-      img{
+      #opis2{
         width: 250px;
+        padding: 0;
+        img{
+          width: 250px;
+        }
       }
     }
   }
@@ -774,6 +828,55 @@ i {
   }
 
 }
+
+#appl{
+  .products{
+    width: 1000px;
+    .item{
+      min-height: 120px;
+      .ram{
+        min-height: 140px;
+        max-height: 140px;
+        .for_img{
+          min-height: 140px;
+          img{
+            min-width: 95px;
+            max-width: 100px;
+          }
+        }
+        .content{
+          h1{
+            font-size: 18px;
+          }
+          h3{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .item:hover{
+    .ram{
+      min-height: 150px;
+      .for_img{
+        min-height: 140px;
+        img{
+          min-width: 105px;
+        }
+      }
+      .content{
+        h1{
+          font-size: 20px;
+        }
+        h3{
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+
 }
 
 
@@ -782,17 +885,19 @@ i {
 
 @media screen and (max-width: 1050px) {
   #first{
-    #opis{
-      width: 45%;
-      h1{
-        font-size: 25px;
+    #cont{
+      #opis{
+        width: 45%;
+        h1{
+          font-size: 25px;
+        }
       }
-    }
-    #opis2{
-      width: 200px;
-      padding: 0;
-      img{
+      #opis2{
         width: 200px;
+        padding: 0;
+        img{
+          width: 200px;
+        }
       }
     }
   }
@@ -895,26 +1000,79 @@ nav{
     padding: 0;
     width: 90%;
     grid-template-columns: 1fr 1fr;
-      .prod-item{
-        padding: 9px 9px;
-        min-height: 150px;
+    .prod-item{
+      padding: 9px 9px;
+      min-height: 150px;
+    }
+    #ram{
+      min-height: 130px;
+      max-height: 130px;
+      padding: 4px 12px;
+      .obraz{
+        img{
+          width: 100%;
+          min-width: 125px;
+          max-width: 125px;
+          min-height: 125px;
+          max-height: 125px;
+        }
       }
-        #ram{
-          min-height: 130px;
-          max-height: 130px;
-          padding: 4px 12px;
-        .obraz{
-          img{
-            width: 100%;
-            min-width: 125px;
-            max-width: 125px;
-            min-height: 125px;
-            max-height: 125px;
-          }
-        }
-        }
+    }
   }
 }
+
+#appl{
+  .products{
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    .item{
+      min-height: 120px;
+      .ram{
+        min-height: 140px;
+        max-height: 140px;
+        .for_img{
+          min-height: 140px;
+          img{
+            min-width: 95px;
+            max-width: 100px;
+          }
+        }
+        .content{
+          h1{
+            font-size: 18px;
+          }
+          h3{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .item:hover{
+    .ram{
+      min-height: 153px;
+      max-height: 153px;
+      .for_img{
+        min-height: 140px;
+        img{
+          min-width: 105px;
+          max-width: 110px;
+        }
+      }
+      .content{
+        h1{
+          font-size: 20px;
+        }
+        h3{
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
+}
+
+
 }
 
 @media screen and (max-width: 992px) {
@@ -973,35 +1131,73 @@ nav{
   }
 }
 
-@media screen and (max-width: 774px) {
-
+@media screen and (max-width: 788px) {
+  body{
+    background-image: url(/svg2.svg);
+    background-repeat: repeat-y;
+  }
+  #first{
+    background-image: none;
+    padding-top: 5vh;
+    #cont{
+      width: 670px;
+      display: grid;
+      margin: 0 auto 0 auto;
+      #opis{
+        order: 2;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-right: 0px;
+      }
+      #opis2{
+        clear: both;
+        order: 1;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+      }
+    }
+  }
   #app{
     height: auto;
+    background: none;
     .product-list{
       padding: 0;
       width: 420px;
       height: auto;
       grid-template-columns: 1fr;
-        .prod-item{
-          padding: 9px 9px;
-          min-height: 150px;
+    .prod-item{
+      padding: 9px 9px;
+      min-height: 150px;
+    }
+    #ram{
+      min-height: 130px;
+      max-height: 130px;
+      padding: 4px 12px;
+      .obraz{
+        img{
+          width: 100%;
+          min-width: 125px;
+          max-width: 125px;
+          min-height: 125px;
+          max-height: 125px;
         }
-          #ram{
-            min-height: 130px;
-            max-height: 130px;
-            padding: 4px 12px;
-          .obraz{
-            img{
-              width: 100%;
-              min-width: 125px;
-              max-width: 125px;
-              min-height: 125px;
-              max-height: 125px;
-            }
-          }
-          }
+      }
+     }
     }
   }
+  #appl{
+    background: none;
+  }
+#four{
+  background: none;
+}
+
+
 }
 
 @media screen and (max-width: 500px) {
