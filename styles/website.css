@@ -361,7 +361,6 @@ section#about #container #rest #image img {
 }
 
 #appl {
-  background-color: #010206;
   font-family: "Montserrat", sans-serif;
   height: 82vh;
 }
@@ -375,12 +374,14 @@ section#about #container #rest #image img {
   margin-bottom: 25px;
 }
 #appl .products {
-  padding: 0;
-  width: 1200px;
-  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  max-width: 1300px;
+  padding: 0;
+  margin: 0 auto 0 auto;
 }
 #appl .products .item {
   transition-duration: 0.4s;
@@ -390,6 +391,7 @@ section#about #container #rest #image img {
   align-items: center;
   justify-content: center;
   min-height: 150px;
+  min-width: 360px;
 }
 #appl .products .item .ram {
   transition-duration: 0.4s;
@@ -414,7 +416,7 @@ section#about #container #rest #image img {
 #appl .products .item .ram .for_img img {
   transition-duration: 0.4s;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 90%;
   border-radius: 7px;
   height: auto;
@@ -456,11 +458,14 @@ section#about #container #rest #image img {
   border: none;
 }
 #appl .item:hover {
-  padding: 2px 1px;
+  padding: 0;
+  min-width: 378px;
+  min-height: 206px;
+  max-height: 206px;
 }
 #appl .item:hover .ram {
   width: 100%;
-  min-height: 190px;
+  min-height: 198px;
 }
 #appl .item:hover .ram .for_img {
   transition-duration: 0.4s;
@@ -472,7 +477,7 @@ section#about #container #rest #image img {
 #appl .item:hover .ram .for_img img {
   transition-duration: 0.4s;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 90%;
   border-radius: 7px;
   height: auto;
@@ -485,6 +490,7 @@ section#about #container #rest #image img {
 }
 #appl .item:hover .content h3 {
   font-size: 20px;
+  color: #BC6FF1;
 }
 
 h3 {
@@ -705,6 +711,9 @@ h3 {
   #first #cont #opis2 img {
     width: 250px;
   }
+  #appl {
+    height: auto;
+  }
   #second {
     background-color: #010206;
     padding-top: 18%;
@@ -730,44 +739,6 @@ h3 {
   }
   #second #dos > div {
     min-width: 250px;
-  }
-  #appl .products {
-    width: 1000px;
-  }
-  #appl .products .item {
-    min-height: 120px;
-  }
-  #appl .products .item .ram {
-    min-height: 140px;
-    max-height: 140px;
-  }
-  #appl .products .item .ram .for_img {
-    min-height: 140px;
-  }
-  #appl .products .item .ram .for_img img {
-    min-width: 95px;
-    max-width: 100px;
-  }
-  #appl .products .item .ram .content h1 {
-    font-size: 18px;
-  }
-  #appl .products .item .ram .content h3 {
-    font-size: 15px;
-  }
-  #appl .item:hover .ram {
-    min-height: 150px;
-  }
-  #appl .item:hover .ram .for_img {
-    min-height: 140px;
-  }
-  #appl .item:hover .ram .for_img img {
-    min-width: 105px;
-  }
-  #appl .item:hover .ram .content h1 {
-    font-size: 20px;
-  }
-  #appl .item:hover .ram .content h3 {
-    font-size: 17px;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -888,47 +859,6 @@ h3 {
     max-width: 125px;
     min-height: 125px;
     max-height: 125px;
-  }
-  #appl .products {
-    grid-template-columns: 1fr 1fr;
-    width: 90%;
-  }
-  #appl .products .item {
-    min-height: 120px;
-  }
-  #appl .products .item .ram {
-    min-height: 140px;
-    max-height: 140px;
-  }
-  #appl .products .item .ram .for_img {
-    min-height: 140px;
-  }
-  #appl .products .item .ram .for_img img {
-    min-width: 95px;
-    max-width: 100px;
-  }
-  #appl .products .item .ram .content h1 {
-    font-size: 18px;
-  }
-  #appl .products .item .ram .content h3 {
-    font-size: 15px;
-  }
-  #appl .item:hover .ram {
-    min-height: 153px;
-    max-height: 153px;
-  }
-  #appl .item:hover .ram .for_img {
-    min-height: 140px;
-  }
-  #appl .item:hover .ram .for_img img {
-    min-width: 105px;
-    max-width: 110px;
-  }
-  #appl .item:hover .ram .content h1 {
-    font-size: 20px;
-  }
-  #appl .item:hover .ram .content h3 {
-    font-size: 17px;
   }
 }
 @media screen and (max-width: 992px) {
