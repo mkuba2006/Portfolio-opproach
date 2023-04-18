@@ -378,11 +378,9 @@ i {
         }
       }
 
-    .prod-item:hover{
-      padding: 9px 1px;
-      #ram{
-        width: 100%;
-        min-height: 140px;
+    .prod-item{
+      #ram:hover{
+        scale: 1.08;
       }
     }
   }
@@ -946,10 +944,10 @@ nav{
     padding: 0;
     width: 90%;
     grid-template-columns: 1fr 1fr;
-    .prod-item{
-      padding: 9px 9px;
-      min-height: 150px;
-    }
+    // .prod-item{
+    //   padding: 9px 9px;
+    //   min-height: 150px;
+    // }
     #ram{
       min-height: 130px;
       max-height: 130px;
@@ -968,11 +966,7 @@ nav{
 }
 }
 
-@media screen and (max-width: 992px) {
-  #dos {
-    height: 100px;
-  }
-}
+
 
 
 @media screen and (max-width:880px) {
@@ -1022,6 +1016,52 @@ nav{
       font-size: 10px;
     }
   }
+
+
+
+  section#about{
+    #container{
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+      height: auto;
+      h3{
+        margin: 0;
+        color: aliceblue;
+        margin-bottom: 20px;
+      }
+      #rest{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        width: 100%;
+        color: #7f8799;
+        #text{
+          width: 350px;
+          font-size: 20px;
+        }
+  
+        #image{
+          display: flex;
+          width: 250px;
+          margin: auto auto auto auto;
+          padding-bottom: 40px;
+          filter: blur(0.1px);
+          img{
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          }
+        }
+      }
+    }
+  }
+
+  
 }
 
 @media screen and (max-width: 788px) {
@@ -1063,10 +1103,10 @@ nav{
       width: 420px;
       height: auto;
       grid-template-columns: 1fr;
-    .prod-item{
-      padding: 9px 9px;
-      min-height: 150px;
-    }
+    // .prod-item{
+    //   padding: 9px 9px;
+    //   min-height: 150px;
+    // }
     #ram{
       min-height: 130px;
       max-height: 130px;
@@ -1088,18 +1128,26 @@ nav{
   }
 #four{
   background: none;
+  padding-top: 18%;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  position: relative;
+  padding-bottom: 10%;
+
+  #dos {
+    margin-bottom: 100px;
+  }
 }
-
-
 }
 
 @media screen and (max-width: 500px) {
 
   #app{
     height: auto;
-    .product-list{
+      .product-list {
       padding: 0;
-      width: 320px;
+      width: auto;
+      max-width: 340px;
       height: auto;
       grid-template-columns: 1fr;
         .prod-item{
@@ -1146,6 +1194,29 @@ nav{
               padding: 10px 10px;
             }
           }
+    }
+  }
+  nav{
+    #logo{
+      height: auto;
+      font-size: 55px;
+      font-weight: 900;
+      transition-duration: 0.4s;
+      border-radius: 10px;
+      padding: 10px 10px 0px 10px;
+      animation: doLogo 5s linear infinite;        
+    }
+  
+  }
+  section#about{
+    #container{
+
+      #rest{
+        #text{
+          width: 80%;
+          font-size: 17px;
+        }
+      }
     }
   }
 }
