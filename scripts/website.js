@@ -1,3 +1,37 @@
+
+// window.addEventListener('scroll',()=>{
+//   const nav = document.querySelector('nav');
+//   if (window.scrollY > 0) {
+//     nav.style.top = '-10%';
+//   } else {
+//     nav.style.top = '0';
+//   }
+// })
+
+const scrollHandler = () => {
+  const nav = document.querySelector('nav');
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve();
+    }, 1);
+  });
+
+  promise.then(() => {
+    nav.style.top = '-12%';
+    nav.style.transition = '0.4s';
+    nav.style.animationTimingFunction = 'ease';
+    setTimeout(() => {
+      nav.style.top = '0';
+    }, 400); 
+  });
+
+  window.removeEventListener('scroll', scrollHandler);
+};
+
+window.addEventListener('scroll', scrollHandler);
+
+
+
 let buttons = document.querySelectorAll('button');
 
 buttons.forEach((button) => {
@@ -58,3 +92,5 @@ function func() {
 }
 func();
 document.querySelector("#appl > ul > li:nth-child(4) > div > div.content > select option")
+
+
