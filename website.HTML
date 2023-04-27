@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9b742cfd8c.js" crossorigin="anonymous" ></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles/website.css">
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <title>Document</title>
@@ -14,18 +18,18 @@
 </head>
 <body>
 
-    <nav>
+    <nav id="nav1">
         <div class="in-nav" id="nav">
             <div id="one" >
-                <div id="logo">JM*Sui</div>
+                <div id="logo1">JM*Sui</div>
             </div>
-            <div>
+            <div id="secret">
                 <a href="#about"><button id="abou" class="Nav-el" >about</button></a>
                 <a href="#about"><button id="languages" class="Nav-el">languages</button></a>
                 <a href="#app"><button id="infos" class="Nav-el">infos</button></a>
                 <a href="#"><button id="contact" class="Nav-el">contact</button></a>
             </div>
-            <div id="burger">
+            <div id="burger1">
                 <div id="jeden" class="line_one"></div>
                 <div id="dwa" class="line_dwo"></div>
                 <div id="trzy" class="line_three"></div>
@@ -42,10 +46,10 @@
                         <div class="redBubble bubblePosition hoverBubble">
                             <p>Lorem</p>
                         </div>
-                </div>
+                    </div>
                 <h1 id="myname">Jakub Myrta.</h1>
                 <h1>I'm
-                    <span class="p">16 y.o <div class="redBubble bubblePosition hoverBubble"><p>Lorem</p></div></span>   
+                    <span class="p">16 y.o <div class="redBubble bubblePosition hoverBubble"><p id="p1">Lorem</p></div></span>   
                     student from gdańsk. I would like to become a front-end developer</h1>
                 <div id="buttons">
                     <button><i class="fa-brands fa-github"></i><a href="https://github.com/mkuba2006">GITHUB</a><span></span></button>
@@ -53,7 +57,7 @@
                 </div>
             </div>
             <div id="opis2">
-                <img src="/IMG/me.jpg">
+                <img src="/images/me.jpg">
             </div>
     </div>
     </section>
@@ -79,7 +83,7 @@
                 </div>
 
                 <div id="image">
-                    <img src="/IMG/me2.jpg">
+                    <img src="/images/me2.jpg">
                 </div>
             </div>
         </div>
@@ -88,13 +92,66 @@
     </section>
 
 
-
-
     <div id="app"></div>
 
     <div id="appl">
         <ul class="products"></ul>
     </div>
+
+
+
+
+
+
+
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/favlist.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fav list app</h5>
+              <p>Here you can search your favourite album and add to favourite list</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/fapp.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Food app</h5>
+              <p>Here you can find every single dish from around the world</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/calc.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Calculator</h5>
+              <p>Basic calculator</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+
+
+
+
+
 
     <section id="four">
         <div id="dos" >
@@ -153,7 +210,7 @@
 <section id="five"></section>
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="scripts/website.js"></script>
 <script src="scripts/songs.js"></script>
 <script src="scripts/form.js"></script>
