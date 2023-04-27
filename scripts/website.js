@@ -55,7 +55,7 @@ buttons.forEach((button) => {
       el.style.cssText = `min-width: 200px;`;
     });
   } else if (window.outerWidth < 920 && window.outerWidth > 600) {
-    dos.style.cssText = `height: 200px; padding: 100px 0px; `;
+    // dos.style.cssText = `height: 280px; padding: 100px 0px; `;
     dos_el.forEach((el) => {
       el.style.cssText = `min-width: 200px; font-size: 15px;`;
     });

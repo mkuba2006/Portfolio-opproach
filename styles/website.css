@@ -24,24 +24,25 @@ body {
   transform: rotate(45deg) translate(-9px, -4px);
 }
 
-nav {
+#nav1 {
+  font-family: "Indie Flower", cursive;
   padding-top: 20px;
   background-color: rgba(0, 0, 0, 0.664);
   width: 100%;
   position: fixed;
   z-index: 1;
 }
-nav .in-nav {
+#nav1 .in-nav {
   padding: 0.3% 15% 0.3% 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-nav nav.scroll-down {
+#nav1 #nav1.scroll-down {
   top: 0;
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
 }
-nav #logo {
+#nav1 #logo1 {
   cursor: pointer;
   height: auto;
   font-size: 75px;
@@ -68,10 +69,10 @@ nav #logo {
     color: #F5EAEA;
   }
 }
-nav #logo:hover {
+#nav1 #logo1:hover {
   background-color: rgba(27, 27, 27, 0.5058823529);
 }
-nav .Nav-el {
+#nav1 .Nav-el {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   padding: 6px 11px 6px 11px;
@@ -82,10 +83,10 @@ nav .Nav-el {
   background-color: black;
   transition-duration: 0.4s;
 }
-nav #burger {
+#nav1 #burger1 {
   display: none;
 }
-nav #burger div {
+#nav1 #burger1 div {
   display: none;
   cursor: pointer;
   width: 26px;
@@ -95,10 +96,10 @@ nav #burger div {
   padding-left: 3%;
   transition: all 0.3s ease;
 }
-nav .mp {
+#nav1 .mp {
   background-color: #1b1b1b;
 }
-nav .scroll {
+#nav1 .scroll {
   background-color: rgb(46, 44, 44);
 }
 
@@ -123,7 +124,7 @@ nav .scroll {
   display: flex;
 }
 #first #cont #opis {
-  width: 35%;
+  width: 55%;
   padding: 9% 1% 12% 16%;
   margin-right: 100px;
 }
@@ -137,7 +138,7 @@ nav .scroll {
   font-size: 30px;
   margin: 20px 0 20px 0;
 }
-#first #cont #opis h1 span {
+#first #cont #opis h1 .p {
   -webkit-text-decoration: underline 2px solid aliceblue;
           text-decoration: underline 2px solid aliceblue;
   cursor: pointer;
@@ -159,7 +160,7 @@ nav .scroll {
   width: 170px;
   background-color: none;
   text-decoration: none;
-  padding: 10px 18px;
+  padding: 6px 12px;
   color: grey;
 }
 #first #cont #opis #buttons button i {
@@ -207,6 +208,7 @@ section#about #container {
   text-align: left;
 }
 section#about #container h3 {
+  font-family: "Montserrat", sans-serif;
   margin-left: 350px;
   color: aliceblue;
 }
@@ -218,6 +220,7 @@ section#about #container #rest {
   color: #7f8799;
 }
 section#about #container #rest #text {
+  font-family: "Montserrat", sans-serif;
   width: 30%;
   font-size: 20px;
 }
@@ -260,7 +263,6 @@ section#about #container #rest #image img {
   position: relative;
   justify-content: space-around;
   align-items: center;
-  height: 280px;
   background-color: #161616;
   padding: 80px 0;
 }
@@ -344,6 +346,7 @@ section#about #container #rest #image img {
 #app .product-list #ram .kontent h1 {
   padding-top: 30px;
   font-size: 20px;
+  font-weight: 700;
 }
 #app .product-list #ram .kontent h1 a {
   color: #C84B31;
@@ -351,12 +354,14 @@ section#about #container #rest #image img {
   text-decoration: none;
 }
 #app .product-list #ram .kontent h3 {
+  font-family: "Montserrat", sans-serif;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 150px;
   color: #ECDBBA;
   padding: 10px 10px;
+  font-size: 18px;
 }
 #app .product-list .prod-item #ram:hover {
   scale: 1.08;
@@ -394,12 +399,15 @@ section#about #container #rest #image img {
   justify-content: center;
   min-height: 150px;
   min-width: 360px;
+  max-width: 360px;
 }
 #appl .products .item .ram {
   transition-duration: 0.4s;
   width: 100%;
   min-height: 180px;
   max-height: 180px;
+  min-width: 342px;
+  max-width: 342px;
   border-radius: 10px;
   background-color: #161616;
   list-style-type: none;
@@ -414,6 +422,7 @@ section#about #container #rest #image img {
   align-items: center;
   padding: auto 0 auto 0;
   min-height: 180px;
+  max-height: 170px;
 }
 #appl .products .item .ram .for_img img {
   transition-duration: 0.4s;
@@ -423,8 +432,9 @@ section#about #container #rest #image img {
   border-radius: 7px;
   height: auto;
   padding-top: 5px;
-  min-width: 119px;
+  min-width: 128px;
   max-width: 140px;
+  max-height: 174px;
 }
 #appl .products .item .content {
   width: 60%;
@@ -437,6 +447,7 @@ section#about #container #rest #image img {
   padding: 0 5px 0 5px;
 }
 #appl .products .item .content h1 {
+  font-weight: 600;
   color: #C84B31;
   transition-duration: 0.4s;
   width: 100%;
@@ -507,6 +518,9 @@ h3 {
   transition: all 0.25s;
 }
 .p:hover .hoverBubble p {
+  padding: 0;
+  margin: 0;
+  padding: 10px 0;
   min-width: 113px;
   display: flex;
   justify-content: left;
@@ -515,7 +529,7 @@ h3 {
 #contact #container {
   color: aliceblue;
   font-family: "Montserrat", sans-serif;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   padding: 4% 15% 4% 15%;
   background-color: #0e0e0f;
@@ -633,6 +647,27 @@ h3 {
   padding: 0 5px;
 }
 
+.carousel {
+  max-height: 700px;
+}
+
+.carousel-item {
+  width: 100%;
+}
+.carousel-item img {
+  max-width: 50%;
+  max-height: 50%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5333333333);
+  filter: blur(0.3px);
+  min-height: 500px;
+  max-height: 500px;
+}
+
+.carousel-caption {
+  background-color: #010206;
+}
+
 @media screen and (max-width: 1500px) {
   section#about #container {
     width: 700px;
@@ -683,6 +718,7 @@ h3 {
   }
   #appl {
     height: auto;
+    margin-top: 100px;
   }
   #second {
     background-color: #010206;
@@ -713,10 +749,15 @@ h3 {
 }
 @media screen and (max-width: 1050px) {
   #first #cont #opis {
-    width: 45%;
+    width: 55%;
   }
   #first #cont #opis h1 {
-    font-size: 25px;
+    font-size: 20px;
+  }
+  #first #cont #opis #buttons button {
+    font-size: 15px;
+    padding: 5px 9px;
+    width: 150px;
   }
   #first #cont #opis2 {
     width: 200px;
@@ -754,21 +795,21 @@ h3 {
   #second #dos > div {
     min-width: 250px;
   }
-  nav {
+  #nav1 {
     padding-top: 0;
     background-color: rgba(0, 0, 0, 0.877);
     max-width: 100%;
     position: fixed;
     z-index: 1;
   }
-  nav .in-nav {
+  #nav1 .in-nav {
     height: 17vh;
     padding: 0.3% 10% 0.3% 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  nav #logo {
+  #nav1 #logo1 {
     height: auto;
     font-size: 75px;
     font-weight: 900;
@@ -794,13 +835,13 @@ h3 {
       color: #F5EAEA;
     }
   }
-  nav #logo:hover {
+  #nav1 #logo:hover {
     background-color: rgba(27, 27, 27, 0.5058823529);
   }
-  nav nav {
+  #nav1 #nav1 {
     width: 100%;
   }
-  nav .Nav-el {
+  #nav1 .Nav-el {
     font-family: "Montserrat", sans-serif;
     padding: 6px 11px 6px 11px;
     border: 1px solid #1b1b1b;
@@ -829,10 +870,13 @@ h3 {
   }
 }
 @media screen and (max-width: 880px) {
-  nav #burger {
+  #nav1 #burger1 {
     display: block;
   }
-  #burger #jeden, #burger #dwa, #burger #trzy {
+  #nav1 #burger1 div {
+    display: block;
+  }
+  #burger1 #jeden, #burger1 #dwa, #burger1 #trzy {
     display: block;
     cursor: pointer;
     width: 30px;
@@ -872,6 +916,9 @@ h3 {
   }
   #second i {
     font-size: 10px;
+  }
+  .nav_active {
+    transform: translateX(0%);
   }
   section#about #container {
     width: 100%;
@@ -1038,7 +1085,7 @@ h3 {
     color: #ECDBBA;
     padding: 10px 10px;
   }
-  nav #logo {
+  #nav1 #logo1 {
     height: auto;
     font-size: 55px;
     font-weight: 900;
