@@ -892,6 +892,15 @@ h3 {
   }
 }
 @media screen and (max-width: 880px) {
+  .carousel {
+    max-height: 500px;
+  }
+  .carousel-item {
+    width: 100%;
+  }
+  .carousel-caption {
+    background-color: #010206;
+  }
   #nav1 #burger1 {
     display: block;
   }
@@ -982,6 +991,16 @@ h3 {
   }
 }
 @media screen and (max-width: 788px) {
+  .carousel {
+    max-height: 450px;
+    margin-bottom: 300px;
+  }
+  .carousel-item {
+    width: 100%;
+  }
+  .carousel-caption {
+    background-color: #010206;
+  }
   body {
     background-image: url(/svg2.svg);
     background-repeat: repeat-y;
@@ -1050,12 +1069,41 @@ h3 {
   }
 }
 @media screen and (max-width: 600px) {
+  .carousel {
+    max-height: 350px;
+    margin: 150px 0;
+  }
+  .carousel-item {
+    width: 100%;
+  }
+  .carousel-item img {
+    min-height: 350px;
+    max-height: 500px;
+  }
+  .carousel-caption {
+    background-color: #010206;
+  }
   section#about {
     padding-top: 20px;
     height: auto;
   }
 }
 @media screen and (max-width: 500px) {
+  .carousel {
+    display: none;
+    max-height: 250px;
+    margin: 150px 0;
+  }
+  .carousel-item {
+    width: 100%;
+  }
+  .carousel-item img {
+    min-height: 250px;
+    max-height: 500px;
+  }
+  .carousel-caption {
+    background-color: #010206;
+  }
   #app {
     height: auto;
   }
@@ -1129,5 +1177,10 @@ h3 {
   #appl > ul li div {
     min-width: 100px;
     max-width: 300px;
+  }
+}
+@media (min-width: 468px) {
+  .d-md-block {
+    display: block !important;
   }
 }/*# sourceMappingURL=website.css.map */
