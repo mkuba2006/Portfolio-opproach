@@ -732,6 +732,16 @@ h3{
 //MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @media screen and (max-width:1500px){
+  .carousel-item {
+    width: 100%;
+    img {
+      max-width: 75%;
+    }
+    .carousel-caption{
+      width: 100%;
+      left: 0;
+    }
+  }
   section#about{
     #container{
       width: 700px;
@@ -774,6 +784,12 @@ h3{
 
 
 @media screen and (max-width: 1250px) {
+  .carousel-item {
+    width: 100%;
+    img {
+      max-width: 85%;
+    }
+  }
   #first{
     #cont{
       #opis{
@@ -835,6 +851,12 @@ i {
 
 
 @media screen and (max-width: 1050px) {
+  .carousel-item {
+    width: 100%;
+    img {
+      max-width: 100%;
+    }
+  }
   #first{
     #cont{
       #opis{
