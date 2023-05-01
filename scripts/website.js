@@ -1,19 +1,9 @@
-
-// window.addEventListener('scroll',()=>{
-//   const nav = document.querySelector('nav');
-//   if (window.scrollY > 0) {
-//     nav.style.top = '-10%';
-//   } else {
-//     nav.style.top = '0';
-//   }
-// })
-
 const scrollHandler = () => {
   const nav = document.querySelector('nav');
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve();
-    }, 1);
+    }, 0);
   });
 
   promise.then(() => {
@@ -22,7 +12,7 @@ const scrollHandler = () => {
     nav.style.animationTimingFunction = 'ease';
     setTimeout(() => {
       nav.style.top = '0';
-    }, 400); 
+    }, 100); 
   });
 
   window.removeEventListener('scroll', scrollHandler);
@@ -55,7 +45,6 @@ buttons.forEach((button) => {
       el.style.cssText = `min-width: 200px;`;
     });
   } else if (window.outerWidth < 920 && window.outerWidth > 600) {
-    // dos.style.cssText = `height: 280px; padding: 100px 0px; `;
     dos_el.forEach((el) => {
       el.style.cssText = `min-width: 200px; font-size: 15px;`;
     });
@@ -77,7 +66,6 @@ buttons.forEach((button) => {
 
 function func() {
   const bubble = document.querySelector("#opis > h1:nth-child(3) > span > div > p");
-  // const Data = new Date('September 10, 2021 10:00:00');
   const Data = new Date('October 5, 2007 01:00:00');
   let tDay = new Date();
   var crok = tDay.getFullYear() - Data.getFullYear();

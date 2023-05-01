@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 html {
   font-family: "Indie Flower", cursive;
-  color: #BC6FF1;
+  color: #bc6ff1;
 }
 
 body {
@@ -54,19 +54,19 @@ body {
 }
 @keyframes doLogo {
   0% {
-    color: #F5EAEA;
+    color: #f5eaea;
   }
   25% {
-    color: #FFB84C;
+    color: #ffb84c;
   }
   50% {
-    color: #F16767;
+    color: #f16767;
   }
   75% {
-    color: #A459D1;
+    color: #a459d1;
   }
   100% {
-    color: #F5EAEA;
+    color: #f5eaea;
   }
 }
 #nav1 #logo1:hover {
@@ -80,7 +80,7 @@ body {
   color: rgba(255, 255, 255, 0.884);
   border-radius: 5px;
   font-size: 16px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.541);
   transition-duration: 0.4s;
 }
 #nav1 #burger1 {
@@ -110,6 +110,9 @@ body {
 #first {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/images/pexels-bich-tran-669996.jpg);
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   font-family: "Montserrat", sans-serif;
   position: relative;
   width: 100%;
@@ -146,7 +149,7 @@ body {
 #first #cont #opis #myname {
   margin: 0;
   font-size: 40px;
-  color: #FFB84C;
+  color: #ffb84c;
 }
 #first #cont #opis #buttons {
   width: 80%;
@@ -172,11 +175,12 @@ body {
   color: grey;
 }
 #first #cont #opis #buttons button:hover {
-  color: #DDF7E3;
+  color: #ddf7e3;
   background-color: #1b1b1b;
 }
-#first #cont #opis #buttons button:hover a, #first #cont #opis #buttons button:hover i {
-  color: #DDF7E3;
+#first #cont #opis #buttons button:hover a,
+#first #cont #opis #buttons button:hover i {
+  color: #ddf7e3;
 }
 #first #opis2 {
   width: 20%;
@@ -245,16 +249,16 @@ section#about #container #rest #image img {
 }
 #four i {
   padding: 0 auto 0 auto;
-  color: #BC6FF1;
+  color: #bc6ff1;
   font-size: 150px;
 }
 #four h3 {
-  color: #FFB84C;
+  color: #ffb84c;
   font-weight: 1000;
   text-shadow: 0px 1px, 1px 0px, 1px 1px;
 }
 #four p {
-  color: #892CDC;
+  color: #892cdc;
   font-weight: 600;
 }
 #four #dos {
@@ -294,7 +298,7 @@ section#about #container #rest #image img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFB84C;
+  color: rgb(181, 188, 194);
 }
 #app .product-list {
   padding: 0;
@@ -349,7 +353,7 @@ section#about #container #rest #image img {
   font-weight: 700;
 }
 #app .product-list #ram .kontent h1 a {
-  color: #C84B31;
+  color: #c84b31;
   list-style-type: none;
   text-decoration: none;
 }
@@ -359,7 +363,7 @@ section#about #container #rest #image img {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 150px;
-  color: #ECDBBA;
+  color: #ecdbba;
   padding: 10px 10px;
   font-size: 18px;
 }
@@ -376,7 +380,7 @@ section#about #container #rest #image img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFB84C;
+  color: rgb(181, 188, 194);
   font-size: 33px;
   margin-bottom: 25px;
 }
@@ -448,7 +452,7 @@ section#about #container #rest #image img {
 }
 #appl .products .item .content h1 {
   font-weight: 600;
-  color: #C84B31;
+  color: #c84b31;
   transition-duration: 0.4s;
   width: 100%;
   display: flex;
@@ -475,7 +479,7 @@ section#about #container #rest #image img {
 }
 
 h3 {
-  color: #BC6FF1;
+  color: #bc6ff1;
 }
 
 .hoverBubble {
@@ -557,7 +561,8 @@ h3 {
 #contact #container #ones #fform form {
   padding: 0 10px 0 0;
 }
-#contact #container #ones #fform form input, #contact #container #ones #fform form textarea {
+#contact #container #ones #fform form input,
+#contact #container #ones #fform form textarea {
   resize: none;
   color: aliceblue;
   width: 320px;
@@ -604,7 +609,7 @@ h3 {
   font-size: 29px;
 }
 #contact #container #ones #media h1 span {
-  color: #FFB84C;
+  color: #ffb84c;
 }
 #contact #container #ones #media ul {
   padding: 0;
@@ -624,10 +629,10 @@ h3 {
   letter-spacing: 5.5px;
 }
 #contact #container #ones #media ul a:nth-child(1):hover {
-  color: #4267B2;
+  color: #4267b2;
 }
 #contact #container #ones #media ul a:nth-child(2):hover {
-  color: #FFDC80;
+  color: #ffdc80;
 }
 #contact #container #ones #media ul a:nth-child(3):hover {
   color: #0072b1;
@@ -643,7 +648,7 @@ h3 {
   font-size: 15px;
 }
 #contact #container #prawa span {
-  color: #DF2E38;
+  color: #df2e38;
   padding: 0 5px;
 }
 
@@ -662,6 +667,7 @@ h3 {
   filter: blur(0.3px);
   min-height: 500px;
   max-height: 500px;
+  filter: brightness(70%);
 }
 
 .carousel-caption {
@@ -715,6 +721,7 @@ h3 {
 }
 @media screen and (max-width: 1250px) {
   .carousel-item {
+    margin-top: 25vh;
     width: 100%;
   }
   .carousel-item img {
@@ -748,7 +755,7 @@ h3 {
   }
   #second i {
     padding: 0 auto 0 auto;
-    color: #BC6FF1;
+    color: #bc6ff1;
     font-size: 150px;
   }
   #second #dos {
@@ -800,7 +807,7 @@ h3 {
   }
   #second i {
     padding: 0 auto 0 auto;
-    color: #BC6FF1;
+    color: #bc6ff1;
     font-size: 100px;
   }
   #second #dos {
@@ -843,19 +850,19 @@ h3 {
   }
   @keyframes doLogo {
     0% {
-      color: #F5EAEA;
+      color: #f5eaea;
     }
     25% {
-      color: #FFB84C;
+      color: #ffb84c;
     }
     50% {
-      color: #F16767;
+      color: #f16767;
     }
     75% {
-      color: #A459D1;
+      color: #a459d1;
     }
     100% {
-      color: #F5EAEA;
+      color: #f5eaea;
     }
   }
   #nav1 #logo:hover {
@@ -891,11 +898,12 @@ h3 {
     min-height: 125px;
     max-height: 125px;
   }
+  #appl {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 880px) {
-  .carousel {
-    max-height: 500px;
-  }
   .carousel-item {
     width: 100%;
   }
@@ -908,7 +916,9 @@ h3 {
   #nav1 #burger1 div {
     display: block;
   }
-  #burger1 #jeden, #burger1 #dwa, #burger1 #trzy {
+  #burger1 #jeden,
+  #burger1 #dwa,
+  #burger1 #trzy {
     display: block;
     cursor: pointer;
     width: 30px;
@@ -992,9 +1002,16 @@ h3 {
   }
 }
 @media screen and (max-width: 788px) {
+  .carousel-item {
+    margin-top: 0;
+    width: 100%;
+  }
+  .carousel-indicators {
+    margin-bottom: -1rem;
+  }
   .carousel {
     max-height: 450px;
-    margin-bottom: 300px;
+    margin: 350px 0;
   }
   .carousel-item {
     width: 100%;
@@ -1111,6 +1128,9 @@ h3 {
   }
 }
 @media screen and (max-width: 600px) {
+  .carousel-indicators {
+    margin-bottom: 2rem;
+  }
   .carousel {
     max-height: 350px;
     margin: 150px 0;
@@ -1131,6 +1151,9 @@ h3 {
   }
 }
 @media screen and (max-width: 500px) {
+  #four {
+    max-height: 1500px;
+  }
   .carousel {
     display: none;
     max-height: 250px;
@@ -1194,7 +1217,7 @@ h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 150px;
-    color: #ECDBBA;
+    color: #ecdbba;
     padding: 10px 10px;
   }
   #nav1 #logo1 {
@@ -1213,7 +1236,8 @@ h3 {
   #contact #container #ones #fform form {
     padding: 0 10px 0 0;
   }
-  #contact #container #ones #fform form input, #contact #container #ones #fform form textarea {
+  #contact #container #ones #fform form input,
+  #contact #container #ones #fform form textarea {
     width: 280px;
   }
   #appl > ul li div {
