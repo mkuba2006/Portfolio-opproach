@@ -767,6 +767,22 @@ h3 {
 }
 
 @media screen and (max-width: 1250px) {
+  section#about {
+    #container {
+      #rest {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-right: 50px;
+        color: #7f8799;
+        #text {
+          width: 400px;
+          font-size: 17px;
+        }
+      }
+    }
+  }
   .carousel-item {
     margin-top: 25vh;
     width: 100%;
@@ -954,6 +970,7 @@ h3 {
     .product-list {
       padding: 0;
       width: 90%;
+      max-width: 800px;
       grid-template-columns: 1fr 1fr;
       // .prod-item{
       //   padding: 9px 9px;
@@ -977,11 +994,23 @@ h3 {
   }
   #appl{
     max-width: 800px;
-    margin: 0 auto;
+    margin: 100px auto 0 auto;
   }
 }
 
 @media screen and (max-width: 880px) {
+  section#about {
+    #container {
+      #rest {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-right: 0;
+        color: #7f8799;
+      }
+    }
+  }
   .carousel-item {
     width: 100%;
   }
@@ -1181,6 +1210,13 @@ h3 {
 }
 
 @media screen and (max-width: 700px) {
+  #contact #container #prawa {
+    font-weight: 700;
+    margin-top: 60px;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+}
   section#about {
     #container {
       width: 100%;

@@ -20,3 +20,11 @@ burger.addEventListener("click", () => {
   });
 });
 
+const hrefs = document.querySelectorAll("#secret a");
+const secretDiv = document.querySelector('#secret');
+
+hrefs.forEach(href=>{
+  href.addEventListener('click', ()=>{
+    secretDiv.classList.remove('nav_active');
+  })
+})
