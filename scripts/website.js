@@ -79,5 +79,16 @@ function func() {
   setTimeout(func, 10);
 }
 func();
+
 document.querySelector("#appl > ul > li:nth-child(4) > div > div.content > select option")
 
+const hrf = document.querySelectorAll("#carouselExampleCaptions > div.carousel-inner > div.carousel-item > div > h5 > a");
+hrf.forEach(hr => {
+  hr.addEventListener("click", function(e) {
+    e.preventDefault();
+    const h = this.getAttribute("href");
+    setTimeout(function() {
+      window.location.href = h;
+    }, 200);
+  });
+});

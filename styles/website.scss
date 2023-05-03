@@ -713,6 +713,27 @@ h3 {
 }
 .carousel-caption {
   background-color: #010206;
+  text-align: center;
+  h5{
+    overflow: hidden;
+    a{
+      z-index: 2;
+    }
+    a::before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 0px;
+      transform: translateY(23px);
+      background-color: rgb(255, 255, 255);
+      z-index: 1;
+      transition: all 0.6s;
+    }
+    a:hover::before {
+      width: 102px;
+    }
+  }
+  
 }
 
 //MEDIA/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
