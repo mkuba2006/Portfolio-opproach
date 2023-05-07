@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap");
 html {
   font-family: "Indie Flower", cursive;
   color: #bc6ff1;
@@ -41,6 +38,9 @@ body {
 #nav1 #nav1.scroll-down {
   top: 0;
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
+}
+#nav1 #hrf {
+  text-decoration: none;
 }
 #nav1 #logo1 {
   cursor: pointer;
@@ -240,7 +240,11 @@ section#about #container #rest #image img {
 }
 
 #four {
-  background-color: #010206;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/images/bg3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   padding-top: 18%;
   font-family: "Montserrat", sans-serif;
   width: 100%;
@@ -267,7 +271,6 @@ section#about #container #rest #image img {
   position: relative;
   justify-content: space-around;
   align-items: center;
-  background-color: #161616;
   padding: 80px 0;
 }
 #four #dos > div {
@@ -288,8 +291,15 @@ section#about #container #rest #image img {
   height: 100%;
 }
 
+#formus {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
 #app {
-  background-color: #010206;
   padding-top: 18%;
   font-family: "Montserrat", sans-serif;
   height: 82vh;
@@ -654,6 +664,8 @@ h3 {
 
 .carousel {
   max-height: 700px;
+  background-color: #0e0e0f;
+  padding: 80px 0;
 }
 
 .carousel-item {
@@ -663,7 +675,6 @@ h3 {
   max-width: 50%;
   max-height: 50%;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.5333333333);
   filter: blur(0.3px);
   min-height: 500px;
   max-height: 500px;
@@ -671,7 +682,7 @@ h3 {
 }
 
 .carousel-caption {
-  background-color: #010206;
+  background-color: #0e0e0f;
   text-align: center;
 }
 .carousel-caption h5 {
@@ -937,6 +948,9 @@ h3 {
   }
 }
 @media screen and (max-width: 880px) {
+  #formus {
+    background: none;
+  }
   section#about #container #rest {
     display: flex;
     justify-content: center;
@@ -1122,6 +1136,7 @@ h3 {
     width: 100%;
     position: relative;
     padding-bottom: 10%;
+    height: 1200px;
   }
   #four #dos {
     margin-bottom: 100px;

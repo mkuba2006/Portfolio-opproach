@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;400&family=Poppins:wght@800&family=Shantell+Sans:wght@300&display=swap');
 $bg: #000000;
 $el1: #52057b;
 $el2: #892cdc;
@@ -45,6 +42,9 @@ body {
   #nav1.scroll-down {
     top: 0;
     box-shadow: 0 10px 50px rgba(0 0 0 / 14%);
+  }
+  #hrf{
+    text-decoration: none;
   }
   #logo1 {
     cursor: pointer;
@@ -248,7 +248,12 @@ section#about {
 }
 
 #four {
-  background-color: #010206;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)),
+  url(/images/bg3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   padding-top: 18%;
   font-family: "Montserrat", sans-serif;
   width: 100%;
@@ -275,8 +280,7 @@ section#about {
     position: relative;
     justify-content: space-around;
     align-items: center;
-    // height: 280px;
-    background-color: #161616;
+    // background-color: #0e0e0f;
     padding: 80px 0;
   }
 
@@ -302,8 +306,19 @@ section#about {
   }
 }
 
+
+#formus{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+  url(/images/bg2.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+}
+
+
 #app {
-  background-color: #010206; //////////////////////////////////////////////////////////////////////////////////////////////
+  // background-color: #010206;
   padding-top: 18%;
   font-family: "Montserrat", sans-serif;
   height: 82vh;
@@ -697,6 +712,8 @@ h3 {
 
 .carousel {
   max-height: 700px;
+  background-color: #0e0e0f;
+  padding: 80px 0;
 }
 .carousel-item {
   width: 100%;
@@ -704,7 +721,7 @@ h3 {
     max-width: 50%;
     max-height: 50%;
     margin: 0 auto;
-    background-color: #00000088;
+
     filter: blur(0.3px);
     min-height: 500px;
     max-height: 500px;
@@ -712,7 +729,7 @@ h3 {
   }
 }
 .carousel-caption {
-  background-color: #010206;
+  background-color: #0e0e0f;
   text-align: center;
   h5{
     overflow: hidden;
@@ -1020,6 +1037,10 @@ h3 {
 }
 
 @media screen and (max-width: 880px) {
+  #formus{
+    background: none;
+  }
+  
   section#about {
     #container {
       #rest {
@@ -1223,7 +1244,7 @@ h3 {
     width: 100%;
     position: relative;
     padding-bottom: 10%;
-
+    height: 1200px;
     #dos {
       margin-bottom: 100px;
     }
