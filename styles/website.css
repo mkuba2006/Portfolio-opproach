@@ -49,7 +49,7 @@ body {
   font-weight: 900;
   transition-duration: 0.4s;
   border-radius: 10px;
-  padding: 10px 10px 0px 10px;
+  padding: 10px;
   animation: doLogo 5s linear infinite;
 }
 @keyframes doLogo {
@@ -72,7 +72,8 @@ body {
 #nav1 #logo1:hover {
   background-color: rgba(27, 27, 27, 0.5058823529);
 }
-#nav1 .Nav-el {
+
+.Nav-el {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   padding: 6px 11px 6px 11px;
@@ -83,10 +84,12 @@ body {
   background-color: rgba(0, 0, 0, 0.541);
   transition-duration: 0.4s;
 }
-#nav1 #burger1 {
+
+#burger1 {
   display: none;
 }
-#nav1 #burger1 div {
+
+#burger1 div {
   display: none;
   cursor: pointer;
   width: 26px;
@@ -96,10 +99,12 @@ body {
   padding-left: 3%;
   transition: all 0.3s ease;
 }
-#nav1 .mp {
+
+.mp {
   background-color: #1b1b1b;
 }
-#nav1 .scroll {
+
+.scroll {
   background-color: rgb(46, 44, 44);
 }
 
@@ -327,7 +332,7 @@ section#about #container #rest #image img {
   justify-content: center;
   min-height: 150px;
 }
-#app .product-list #ram {
+#app .product-list .prod-item #ram {
   transition-duration: 0.4s;
   width: 100%;
   min-height: 130px;
@@ -340,15 +345,15 @@ section#about #container #rest #image img {
   justify-content: center;
   padding: 4px 12px;
 }
-#app .product-list #ram .obraz {
+#app .product-list .prod-item #ram .obraz {
   width: 40%;
 }
-#app .product-list #ram .obraz img {
+#app .product-list .prod-item #ram .obraz img {
   width: 100%;
   border-radius: 7px;
   height: auto;
 }
-#app .product-list #ram .kontent {
+#app .product-list .prod-item #ram .kontent {
   width: 60%;
   height: 50%;
   display: flex;
@@ -357,17 +362,17 @@ section#about #container #rest #image img {
   align-items: center;
   overflow: hidden;
 }
-#app .product-list #ram .kontent h1 {
+#app .product-list .prod-item #ram .kontent h1 {
   padding-top: 30px;
   font-size: 20px;
   font-weight: 700;
 }
-#app .product-list #ram .kontent h1 a {
+#app .product-list .prod-item #ram .kontent h1 a {
   color: #c84b31;
   list-style-type: none;
   text-decoration: none;
 }
-#app .product-list #ram .kontent h3 {
+#app .product-list .prod-item #ram .kontent h3 {
   font-family: "Montserrat", sans-serif;
   white-space: nowrap;
   overflow: hidden;
@@ -378,7 +383,7 @@ section#about #container #rest #image img {
   font-size: 18px;
 }
 #app .product-list .prod-item #ram:hover {
-  scale: 1.08;
+  transform: scale(1.08);
 }
 
 #appl {
@@ -764,7 +769,6 @@ h3 {
     font-size: 17px;
   }
   .carousel-item {
-    margin-top: 25vh;
     width: 100%;
   }
   .carousel-item img {
