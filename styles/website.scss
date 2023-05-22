@@ -125,7 +125,7 @@ body {
 }
 
 #first {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(/images/pexels-bich-tran-669996.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('https://images.pexels.com/photos/669996/pexels-photo-669996.jpeg?cs=srgb&dl=pexels-bich-tran-669996.jpg&fm=jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -276,8 +276,7 @@ section#about {
 }
 
 #four {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)),
-    url(/images/bg3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url('https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?cs=srgb&dl=pexels-pixabay-270348.jpg&fm=jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -390,7 +389,7 @@ section#about {
         padding: 4px 12px;
 
         .obraz {
-          width: 40%;
+          width: 42%;
 
           img {
             width: 100%;
@@ -1217,7 +1216,6 @@ h3 {
     background-repeat: repeat-y;
   }
   #first {
-    background-image: none;
     padding-top: 5vh;
     #cont {
       width: 670px;
@@ -1230,6 +1228,7 @@ h3 {
         width: 100%;
         padding: 0;
         margin-right: 0px;
+        margin-top: 20px;
       }
       #opis2 {
         clear: both;
@@ -1270,11 +1269,8 @@ h3 {
       }
     }
   }
-  #appl {
-    background: none;
-  }
+
   #four {
-    background: none;
     padding-top: 18%;
     font-family: "Montserrat", sans-serif;
     width: 100%;
